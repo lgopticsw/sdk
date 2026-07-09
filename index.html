@@ -244,24 +244,24 @@
       </div>
 
       <div class="code-block">
-<span class="comment">// C++ - 카메라 초기화 예시</span>
-<span class="keyword">#include</span> <span class="string">&lt;lginnotek/camera_sdk.h&gt;</span>
+<span class="comment">// C++ - 카메라 초기화 예시</span> <br>
+<span class="keyword">#include</span> <span class="string">&lt;lginnotek/camera_sdk.h&gt;</span> <br>
 
-<span class="type">int</span> <span class="func">main</span>() {
-    <span class="comment">// SDK 초기화</span>
-    <span class="type">LGI::CameraSDK</span> sdk(<span class="string">"YOUR_API_KEY"</span>);
-    sdk.<span class="func">initialize</span>();
+<span class="type">int</span> <span class="func">main</span>() {  <br>
+    <span class="comment">// SDK 초기화</span>  <br>
+    <span class="type">LGI::CameraSDK</span> sdk(<span class="string">"YOUR_API_KEY"</span>);  <br>
+    sdk.<span class="func">initialize</span>();  <br>
 
-    <span class="comment">// 카메라 모듈 연결 및 스트림 시작</span>
-    <span class="type">auto</span> camera = sdk.<span class="func">openCamera</span>(<span class="string">"module_id_0"</span>);
-    camera-&gt;<span class="func">startPreview</span>(LGI::Resolution::<span class="type">FHD_1080P</span>, <span class="string">60</span>);
+    <span class="comment">// 카메라 모듈 연결 및 스트림 시작</span>  <br>
+    <span class="type">auto</span> camera = sdk.<span class="func">openCamera</span>(<span class="string">"module_id_0"</span>);  <br>
+    camera-&gt;<span class="func">startPreview</span>(LGI::Resolution::<span class="type">FHD_1080P</span>, <span class="string">60</span>);  <br>
 
-    <span class="comment">// 이미지 캡처</span>
-    camera-&gt;<span class="func">capture</span>([](LGI::Image img) {
-        img.<span class="func">save</span>(<span class="string">"output.jpg"</span>);
-    });
-
-    <span class="keyword">return</span> <span class="string">0</span>;
+    <span class="comment">// 이미지 캡처</span>  <br>
+    camera-&gt;<span class="func">capture</span>([](LGI::Image img) {  <br>
+        img.<span class="func">save</span>(<span class="string">"output.jpg"</span>);  <br>
+    });  <br>
+  <br> 
+    <span class="keyword">return</span> <span class="string">0</span>;  <br>
 }
       </div>
 
@@ -275,7 +275,7 @@
   <footer>
     <div class="footer-inner">
       <div class="footer-logo">
-        <span class="logo-badge">LG</span>
+        <span class="logo-badge">LG Innotek</span>
         <span style="color:rgba(255,255,255,0.8); font-weight:600;">Innotek Camera Module SDK</span>
       </div>
       <p>© 2024 LG Innotek Co., Ltd. All rights reserved.</p>
