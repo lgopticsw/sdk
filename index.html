@@ -1,14 +1,15 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="LG Innotek 카메라 모듈 SDK - 고성능 카메라 모듈 통합을 위한 개발자 도구 및 API" />
-  <title>LG Innotek Camera Module SDK</title>
+  <meta name="description" content="LG VisionLink SDK - High-performance multi-sensor solutions for robotics, automotive, and driver monitoring." />
+  <title>LG VisionLink SDK</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="icon" href="assets/LG_logo.png?v=20260709" type="image/png" />
+  <link rel="stylesheet" href="styles.css?v=20260709" />
 </head>
 <body>
 
@@ -16,278 +17,336 @@
   <header>
     <div class="header-inner">
       <a href="index.html" class="logo">
-        <span class="logo-badge">LG Innotek</span>
-        <span class="logo-text">Camera Module SDK</span>
+        <img src="assets/logo-lginnotek.png" alt="LG Innotek logo" class="logo-image" />
+        <span class="sr-only">LG VisionLink SDK</span>
       </a>
       <nav>
-        <a href="index.html" class="active">홈</a>
-        <a href="https://reimagined-adventure-9m8817p.pages.github.io/docs.html">문서</a>
-        <a href="https://reimagined-adventure-9m8817p.pages.github.io/docs.html#api">API 레퍼런스</a>
-        <a href="https://reimagined-adventure-9m8817p.pages.github.io/docs.html#download">다운로드</a>
+        <a href="index.html" class="active">Home</a>
+        <a href="#products">Products</a>
+        <details class="nav-dropdown">
+          <summary>Guides</summary>
+          <div class="dropdown-menu">
+            <a href="https://reimagined-adventure-9m8817p.pages.github.io/robot.html">Robot Multi-Sensor</a>
+            <a href="https://reimagined-adventure-9m8817p.pages.github.io/underdisplay.html">Under Display Camera</a>
+            <a href="https://reimagined-adventure-9m8817p.pages.github.io/dms.html">Driver Monitoring</a>
+          </div>
+        </details>
+        <a href="https://github.com/LGIT-Optics/SDK-pages" target="_blank" rel="noopener">Download</a>
       </nav>
     </div>
   </header>
 
-  <!-- Hero -->
+  <!-- Hero Section -->
   <section class="hero">
     <div class="hero-inner">
-      <div class="hero-badge">LG Innotek · Camera Module SDK</div>
-      <h1>카메라 모듈 통합을 위한<br /><span>Software Development Kit</span></h1>
+      <div class="hero-badge">LG VisionLink · Sensor Solutions</div>
+      <h1><span>Advanced Sensing Technology</span><br />for a Smarter World</h1>
       <p>
-        LG Innotek의 카메라 모듈 SDK는 고성능 이미징 솔루션을 여러분의 애플리케이션에
-        빠르고 안정적으로 통합할 수 있도록 설계된 포괄적인 소프트웨어 개발 키트입니다.
+        LG Innotek's advanced sensor modules and SDKs unlock new possibilities across
+        robotics, automotive, and driver monitoring. We build the future with precise
+        perception and dependable performance.
       </p>
       <div class="hero-actions">
-        <a href="https://reimagined-adventure-9m8817p.pages.github.io/docs.html" class="btn-primary">시작하기</a>
-        <a href="https://reimagined-adventure-9m8817p.pages.github.io/docs.html#api" class="btn-secondary">API 문서 보기</a>
+        <a href="#products" class="btn btn-primary">Explore Products</a>
+        <a href="https://reimagined-adventure-9m8817p.pages.github.io/robot.html" class="btn btn-secondary">View Guides</a>
       </div>
     </div>
   </section>
 
-  <!-- Stats -->
-  <div class="stats-bar">
-    <div class="stats-inner">
-      <div class="stat-item">
-        <span class="stat-num">200+</span>
-        <span class="stat-label">지원 API</span>
+  <!-- Key Features -->
+  <section class="section">
+    <div class="section-header">
+      <div class="section-badge">Key Features</div>
+      <h2>What Our Technology Makes Possible</h2>
+      <p>Powerful capabilities delivered by three advanced sensor modules</p>
+    </div>
+    <div class="features-list">
+      <div class="feature-item">
+        <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg></div>
+        <div class="feature-content">
+          <h3>Multi-Sensor Integration</h3>
+          <p>Stereo, dToF, and Radar combine in a single module for complete 3D perception.</p>
+        </div>
       </div>
-      <div class="stat-item">
-        <span class="stat-num">5</span>
-        <span class="stat-label">지원 플랫폼</span>
+      <div class="feature-item">
+        <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><line x1="9" y1="1" x2="9" y2="4"/><line x1="15" y1="1" x2="15" y2="4"/><line x1="9" y1="20" x2="9" y2="23"/><line x1="15" y1="20" x2="15" y2="23"/><line x1="20" y1="9" x2="23" y2="9"/><line x1="20" y1="14" x2="23" y2="14"/><line x1="1" y1="9" x2="4" y2="9"/><line x1="1" y1="14" x2="4" y2="14"/></svg></div>
+        <div class="feature-content">
+          <h3>High-Performance Processing</h3>
+          <p>Optimized for the Jetson platform to enable real-time processing.</p>
+        </div>
       </div>
-      <div class="stat-item">
-        <span class="stat-num">4K</span>
-        <span class="stat-label">최대 해상도</span>
+      <div class="feature-item">
+        <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg></div>
+        <div class="feature-content">
+          <h3>Accurate Perception</h3>
+          <p>Advanced AI-based algorithms maximize recognition accuracy.</p>
+        </div>
       </div>
-      <div class="stat-item">
-        <span class="stat-num">120fps</span>
-        <span class="stat-label">최대 프레임률</span>
+      <div class="feature-item">
+        <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg></div>
+        <div class="feature-content">
+          <h3>Multi-Platform Support</h3>
+          <p>Runs across a wide range of platforms including Linux, Windows, and Jetson.</p>
+        </div>
       </div>
+      <div class="feature-item">
+        <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></div>
+        <div class="feature-content">
+          <h3>Low-Power Operation</h3>
+          <p>Optimized algorithms keep power consumption to a minimum.</p>
+        </div>
+      </div>
+      <div class="feature-item">
+        <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></div>
+        <div class="feature-content">
+          <h3>Developer-Friendly</h3>
+          <p>Detailed documentation and sample code accelerate your development.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Products Section -->
+  <section class="section light" id="products">
+    <div class="section-header">
+      <div class="section-badge">Products</div>
+      <h2>LG Innotek Sensor Solutions</h2>
+      <p>Sensor modules optimized for the requirements of each field</p>
+    </div>
+    <div class="products-grid">
+      <!-- Product 1: Robot -->
+      <div class="product-card">
+        <div class="product-header">
+          <div class="product-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><line x1="9" y1="1" x2="9" y2="4"/><line x1="15" y1="1" x2="15" y2="4"/><line x1="9" y1="20" x2="9" y2="23"/><line x1="15" y1="20" x2="15" y2="23"/><line x1="20" y1="9" x2="23" y2="9"/><line x1="20" y1="14" x2="23" y2="14"/><line x1="1" y1="9" x2="4" y2="9"/><line x1="1" y1="14" x2="4" y2="14"/></svg></div>
+          <h3>Robot Multi-Sensor Module</h3>
+          <p class="product-subtext">Stereo + dToF + Radar</p>
+        </div>
+        <div class="product-body">
+          <p style="font-size: 14px; color: #6b6b6b; margin-bottom: 16px;">
+            An integrated sensor solution for autonomous navigation and environmental perception.
+          </p>
+          <ul class="product-features">
+            <li>3D environment mapping with stereo vision</li>
+            <li>Maximized close-range accuracy with the dToF depth sensor</li>
+            <li>Long-range and obstacle detection with radar</li>
+            <li>Optimized for the Linux Jetson platform</li>
+            <li>Real-time SLAM support</li>
+          </ul>
+          <div class="product-specs">
+            <span class="spec-tag">Linux</span>
+            <span class="spec-tag">Jetson</span>
+            <span class="spec-tag">ROS</span>
+            <span class="spec-tag">C++</span>
+          </div>
+          <div class="product-actions">
+            <a href="robot.html" class="learn-more">Learn More</a>
+            <a href="https://github.com/LGIT-Optics/SDK-pages" class="download" target="_blank" rel="noopener">Download SDK</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 2: Under Display Camera -->
+      <div class="product-card">
+        <div class="product-header">
+          <div class="product-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg></div>
+          <h3>Under Display Camera</h3>
+          <p class="product-subtext">IR + Image Restoration</p>
+        </div>
+        <div class="product-body">
+          <p style="font-size: 14px; color: #6b6b6b; margin-bottom: 16px;">
+            An IR camera solution mounted beneath the in-vehicle display.
+          </p>
+          <ul class="product-features">
+            <li>Night-time capture with an infrared camera</li>
+            <li>AI-based image restoration algorithms</li>
+            <li>Optimized for under-display mounting</li>
+            <li>Support for Linux Jetson and Windows</li>
+            <li>Real-time image processing</li>
+          </ul>
+          <div class="product-specs">
+            <span class="spec-tag">Linux</span>
+            <span class="spec-tag">Windows</span>
+            <span class="spec-tag">Jetson</span>
+            <span class="spec-tag">Python</span>
+          </div>
+          <div class="product-actions">
+            <a href="underdisplay.html" class="learn-more">Learn More</a>
+            <a href="https://github.com/LGIT-Optics/SDK-pages" class="download" target="_blank" rel="noopener">Download SDK</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 3: Driver Monitoring -->
+      <div class="product-card">
+        <div class="product-header">
+          <div class="product-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7-11-7-11-7z"/><circle cx="12" cy="12" r="3"/></svg></div>
+          <h3>Driver Monitoring Module</h3>
+          <p class="product-subtext">ToF + IR + RGB</p>
+        </div>
+        <div class="product-body">
+          <p style="font-size: 14px; color: #6b6b6b; margin-bottom: 16px;">
+            A monitoring solution that tracks the driver's attentiveness.
+          </p>
+          <ul class="product-features">
+            <li>Distance sensing with the ToF sensor</li>
+            <li>Eye-movement tracking with infrared</li>
+            <li>Detailed facial recognition with the RGB camera</li>
+            <li>Optimized for the Windows platform</li>
+            <li>Compatible with DMS (Driver Monitoring System)</li>
+          </ul>
+          <div class="product-specs">
+            <span class="spec-tag">Windows</span>
+            <span class="spec-tag">DMS</span>
+            <span class="spec-tag">AI</span>
+            <span class="spec-tag">C#</span>
+          </div>
+          <div class="product-actions">
+            <a href="dms.html" class="learn-more">Learn More</a>
+            <a href="https://github.com/LGIT-Optics/SDK-pages" class="download" target="_blank" rel="noopener">Download SDK</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tech Specs -->
+  <section class="section">
+    <div class="section-header">
+      <div class="section-badge">Specifications</div>
+      <h2>Performance at a Glance</h2>
+      <p>Core specifications across each sensor module</p>
+    </div>
+    <div class="tech-specs">
+      <div class="spec-card highlight">
+        <div class="spec-number">3</div>
+        <div class="spec-label">Integrated Sensors<br />(Robot)</div>
+      </div>
+      <div class="spec-card">
+        <div class="spec-number">4K</div>
+        <div class="spec-label">Resolution Support</div>
+      </div>
+      <div class="spec-card">
+        <div class="spec-number">30+</div>
+        <div class="spec-label">fps Processing</div>
+      </div>
+      <div class="spec-card highlight">
+        <div class="spec-number">3</div>
+        <div class="spec-label">Supported OS</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quick Start -->
+  <section class="section light">
+    <div class="section-header">
+      <div class="section-badge">Quick Start</div>
+      <h2>Get Started in Minutes</h2>
+      <p>Launch your development flow in just a few steps</p>
+    </div>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 32px;">
+      <div style="text-align: center;">
+        <div style="background: linear-gradient(135deg, #a50034, #a50034); color: white; width: 48px; height: 48px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 24px; font-weight: 800; margin: 0 auto 16px;">1</div>
+        <h3 style="font-size: 18px; font-weight: 700; margin-bottom: 8px;">Download the SDK</h3>
+        <p style="font-size: 14px; color: #6b6b6b;">Get the latest SDK packages from GitHub.</p>
+      </div>
+      <div style="text-align: center;">
+        <div style="background: linear-gradient(135deg, #a50034, #a50034); color: white; width: 48px; height: 48px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 24px; font-weight: 800; margin: 0 auto 16px;">2</div>
+        <h3 style="font-size: 18px; font-weight: 700; margin-bottom: 8px;">Set Up Your Environment</h3>
+        <p style="font-size: 14px; color: #6b6b6b;">Install dependencies and configure your platform.</p>
+      </div>
+      <div style="text-align: center;">
+        <div style="background: linear-gradient(135deg, #a50034, #a50034); color: white; width: 48px; height: 48px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 24px; font-weight: 800; margin: 0 auto 16px;">3</div>
+        <h3 style="font-size: 18px; font-weight: 700; margin-bottom: 8px;">Build with Sample Code</h3>
+        <p style="font-size: 14px; color: #6b6b6b;">Start implementation quickly using provided examples.</p>
+      </div>
+      <div style="text-align: center;">
+        <div style="background: linear-gradient(135deg, #a50034, #a50034); color: white; width: 48px; height: 48px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 24px; font-weight: 800; margin: 0 auto 16px;">4</div>
+        <h3 style="font-size: 18px; font-weight: 700; margin-bottom: 8px;">Test and Deploy</h3>
+        <p style="font-size: 14px; color: #6b6b6b;">Validate performance and deploy with confidence.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Documentation -->
+  <section class="section">
+    <div class="section-header">
+      <div class="section-badge">Documentation</div>
+      <h2>Detailed Developer Guides</h2>
+      <p>APIs and practical usage examples for each module</p>
+    </div>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px;">
+      <div style="background: white; border: 1px solid #e5e7eb; border-radius: 12px; padding: 24px; transition: all 0.3s;" onmouseover="this.style.transform='translateY(-4px)'; this.style.boxShadow='0 10px 25px rgba(0,0,0,0.1)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 6px rgba(0,0,0,0.07)'">
+        <h3 style="font-size: 18px; font-weight: 700; margin-bottom: 12px;">Installation & Setup</h3>
+        <p style="font-size: 14px; color: #6b6b6b; margin-bottom: 16px;">Step-by-step SDK installation and initial setup by platform.</p>
+        <a href="https://reimagined-adventure-9m8817p.pages.github.io/robot.html" style="color: #a50034; text-decoration: none; font-weight: 600;">View Guide →</a>
+      </div>
+      <div style="background: white; border: 1px solid #e5e7eb; border-radius: 12px; padding: 24px; transition: all 0.3s;" onmouseover="this.style.transform='translateY(-4px)'; this.style.boxShadow='0 10px 25px rgba(0,0,0,0.1)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 6px rgba(0,0,0,0.07)'">
+        <h3 style="font-size: 18px; font-weight: 700; margin-bottom: 12px;">API Reference</h3>
+        <p style="font-size: 14px; color: #6b6b6b; margin-bottom: 16px;">Comprehensive references for all APIs, classes, and interfaces.</p>
+        <a href="https://reimagined-adventure-9m8817p.pages.github.io/underdisplay.html" style="color: #a50034; text-decoration: none; font-weight: 600;">View Guide →</a>
+      </div>
+      <div style="background: white; border: 1px solid #e5e7eb; border-radius: 12px; padding: 24px; transition: all 0.3s;" onmouseover="this.style.transform='translateY(-4px)'; this.style.boxShadow='0 10px 25px rgba(0,0,0,0.1)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 6px rgba(0,0,0,0.07)'">
+        <h3 style="font-size: 18px; font-weight: 700; margin-bottom: 12px;">Sample Code</h3>
+        <p style="font-size: 14px; color: #6b6b6b; margin-bottom: 16px;">Production-style snippets and real usage examples for each sensor.</p>
+        <a href="https://reimagined-adventure-9m8817p.pages.github.io/dms.html" style="color: #a50034; text-decoration: none; font-weight: 600;">View Guide →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <div class="cta-section">
+    <div class="cta-inner">
+      <h2>Get Started Today</h2>
+      <p>Build innovative products with LG Innotek's advanced sensor solutions.</p>
+      <a href="https://github.com/LGInnotek" class="btn btn-secondary" target="_blank" rel="noopener">Download SDK</a>
     </div>
   </div>
 
-  <!-- Features -->
-  <section>
-    <div class="section-inner">
-      <div class="section-label">핵심 기능</div>
-      <h2 class="section-title">SDK가 제공하는 기능</h2>
-      <p class="section-desc">
-        LG Innotek 카메라 모듈 SDK는 이미지 캡처부터 실시간 영상 처리까지
-        카메라 애플리케이션 개발에 필요한 모든 기능을 제공합니다.
-      </p>
-      <div class="features-grid">
-        <div class="feature-card">
-          <div class="feature-icon">📷</div>
-          <h3>이미지 캡처 & 스트리밍</h3>
-          <p>
-            고해상도 이미지 캡처 및 실시간 영상 스트리밍을 위한 완전한 API 세트.
-            RAW, JPEG, YUV 등 다양한 포맷을 지원합니다.
-          </p>
-        </div>
-        <div class="feature-card">
-          <div class="feature-icon">🎛️</div>
-          <h3>카메라 제어</h3>
-          <p>
-            노출, 화이트 밸런스, ISO, 초점, 줌 등 카메라 파라미터를
-            세밀하게 제어할 수 있는 풍부한 인터페이스를 제공합니다.
-          </p>
-        </div>
-        <div class="feature-card">
-          <div class="feature-icon">⚡</div>
-          <h3>하드웨어 가속 ISP</h3>
-          <p>
-            LG Innotek 카메라 모듈 내장 ISP(Image Signal Processor)를 활용하여
-            실시간 고품질 이미지 처리를 수행합니다.
-          </p>
-        </div>
-        <div class="feature-card">
-          <div class="feature-icon">🔭</div>
-          <h3>멀티 카메라 지원</h3>
-          <p>
-            복수의 카메라 모듈을 동시에 제어하고 동기화할 수 있는
-            멀티 카메라 세션 관리 기능을 제공합니다.
-          </p>
-        </div>
-        <div class="feature-card">
-          <div class="feature-icon">🤖</div>
-          <h3>AI / 머신러닝 통합</h3>
-          <p>
-            객체 감지, 얼굴 인식, 장면 분류 등 AI 기반 이미징 기능과의
-            손쉬운 통합을 위한 인터페이스를 제공합니다.
-          </p>
-        </div>
-        <div class="feature-card">
-          <div class="feature-icon">🔒</div>
-          <h3>보안 및 인증</h3>
-          <p>
-            카메라 모듈의 보안 부팅 및 펌웨어 인증을 통해
-            신뢰할 수 있는 안전한 이미징 환경을 보장합니다.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- SDK Modules -->
-  <section class="modules-section">
-    <div class="section-inner">
-      <div class="section-label">SDK 구성</div>
-      <h2 class="section-title">SDK 모듈 구성요소</h2>
-      <p class="section-desc">
-        각 모듈은 독립적으로 사용하거나 조합하여 최적의 이미징 솔루션을 구성할 수 있습니다.
-      </p>
-      <div class="modules-grid">
-        <div class="module-card">
-          <h3>Camera Core Library</h3>
-          <span class="module-ver">v3.2.1</span>
-          <p>카메라 초기화, 세션 관리, 기본 캡처 파이프라인을 제공하는 핵심 라이브러리입니다. C/C++ 및 Java 바인딩을 지원합니다.</p>
-        </div>
-        <div class="module-card">
-          <h3>ISP Control API</h3>
-          <span class="module-ver">v2.8.0</span>
-          <p>하드웨어 ISP 파라미터 직접 제어를 위한 저수준 API. AWB, AE, AF 알고리즘의 세밀한 튜닝이 가능합니다.</p>
-        </div>
-        <div class="module-card">
-          <h3>Image Processing SDK</h3>
-          <span class="module-ver">v2.5.3</span>
-          <p>노이즈 제거, HDR 합성, 디모자이킹 등 고급 이미지 처리 알고리즘 라이브러리입니다.</p>
-        </div>
-        <div class="module-card">
-          <h3>Streaming Engine</h3>
-          <span class="module-ver">v1.9.2</span>
-          <p>RTSP/HLS 프로토콜을 통한 실시간 영상 스트리밍 및 H.264/H.265 하드웨어 인코딩을 지원합니다.</p>
-        </div>
-        <div class="module-card">
-          <h3>Calibration Toolkit</h3>
-          <span class="module-ver">v1.4.0</span>
-          <p>렌즈 왜곡 보정, 색상 교정, 카메라 교정 데이터 관리를 위한 도구 모음입니다.</p>
-        </div>
-        <div class="module-card">
-          <h3>Diagnostic & Logger</h3>
-          <span class="module-ver">v1.2.1</span>
-          <p>카메라 모듈 상태 모니터링, 오류 진단 및 상세 로깅 기능을 제공하는 진단 모듈입니다.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Platforms -->
-  <section>
-    <div class="section-inner">
-      <div class="section-label">호환성</div>
-      <h2 class="section-title">지원 플랫폼</h2>
-      <p class="section-desc">
-        다양한 운영체제 및 임베디드 환경에서 동일한 SDK API로 개발할 수 있습니다.
-      </p>
-      <div class="platforms-list">
-        <div class="platform-badge">
-          <span class="platform-icon">🤖</span>
-          <span>Android (API 28+)</span>
-        </div>
-        <div class="platform-badge">
-          <span class="platform-icon">🍎</span>
-          <span>iOS / iPadOS (14+)</span>
-        </div>
-        <div class="platform-badge">
-          <span class="platform-icon">🐧</span>
-          <span>Linux (Ubuntu / Yocto)</span>
-        </div>
-        <div class="platform-badge">
-          <span class="platform-icon">🪟</span>
-          <span>Windows 10 / 11</span>
-        </div>
-        <div class="platform-badge">
-          <span class="platform-icon">💻</span>
-          <span>Embedded (RTOS)</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Getting Started -->
-  <section class="modules-section">
-    <div class="section-inner">
-      <div class="section-label">빠른 시작</div>
-      <h2 class="section-title">시작하는 방법</h2>
-      <p class="section-desc">
-        단 4단계로 LG Innotek 카메라 모듈 SDK를 여러분의 프로젝트에 통합하세요.
-      </p>
-      <div class="steps-list">
-        <div class="step-item">
-          <div class="step-num">1</div>
-          <div class="step-content">
-            <h4>SDK 다운로드</h4>
-            <p>개발자 포털에서 플랫폼에 맞는 SDK 패키지를 다운로드합니다.</p>
-          </div>
-        </div>
-        <div class="step-item">
-          <div class="step-num">2</div>
-          <div class="step-content">
-            <h4>라이브러리 설치</h4>
-            <p>패키지 관리자 또는 수동 설치를 통해 SDK 라이브러리를 프로젝트에 추가합니다.</p>
-          </div>
-        </div>
-        <div class="step-item">
-          <div class="step-num">3</div>
-          <div class="step-content">
-            <h4>초기화 및 설정</h4>
-            <p>API 키 발급 후 SDK를 초기화하고 카메라 모듈 연결을 설정합니다.</p>
-          </div>
-        </div>
-        <div class="step-item">
-          <div class="step-num">4</div>
-          <div class="step-content">
-            <h4>개발 시작</h4>
-            <p>샘플 코드와 API 레퍼런스를 참고하여 카메라 기능을 구현합니다.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="code-block">
-<span class="comment">// C++ - 카메라 초기화 예시</span> <br>
-<span class="keyword">#include</span> <span class="string">&lt;lginnotek/camera_sdk.h&gt;</span> <br>
-
-<span class="type">int</span> <span class="func">main</span>() {  <br>
-    <span class="comment">// SDK 초기화</span>  <br>
-    <span class="type">LGI::CameraSDK</span> sdk(<span class="string">"YOUR_API_KEY"</span>);  <br>
-    sdk.<span class="func">initialize</span>();  <br>
-
-    <span class="comment">// 카메라 모듈 연결 및 스트림 시작</span>  <br>
-    <span class="type">auto</span> camera = sdk.<span class="func">openCamera</span>(<span class="string">"module_id_0"</span>);  <br>
-    camera-&gt;<span class="func">startPreview</span>(LGI::Resolution::<span class="type">FHD_1080P</span>, <span class="string">60</span>);  <br>
-
-    <span class="comment">// 이미지 캡처</span>  <br>
-    camera-&gt;<span class="func">capture</span>([](LGI::Image img) {  <br>
-        img.<span class="func">save</span>(<span class="string">"output.jpg"</span>);  <br>
-    });  <br>
-  <br> 
-    <span class="keyword">return</span> <span class="string">0</span>;  <br>
-}
-      </div>
-
-      <div style="text-align:center; margin-top: 40px;">
-        <a href="https://reimagined-adventure-9m8817p.pages.github.io/docs.html" class="btn-primary">전체 문서 보기 →</a>
-      </div>
-    </div>
-  </section>
-
   <!-- Footer -->
   <footer>
-    <div class="footer-inner">
-      <div class="footer-logo">
-        <span class="logo-badge">LG Innotek</span>
-        <span style="color:rgba(255,255,255,0.8); font-weight:600;">Innotek Camera Module SDK</span>
+    <div class="footer-content">
+      <div class="footer-brand">
+        <img src="assets/logo-lginnotek-white.png" alt="LG Innotek logo" />
+        <p>LG VisionLink SDK</p>
       </div>
-      <p>© 2024 LG Innotek Co., Ltd. All rights reserved.</p>
-      <p>
-        <a href="https://www.lginnotek.com" target="_blank" rel="noopener">LG Innotek 공식 사이트</a>
-        &nbsp;·&nbsp;
-        <a href="https://reimagined-adventure-9m8817p.pages.github.io/docs.html" target="_blank" rel="noopener">문서</a>
-        &nbsp;·&nbsp;
-        <a href="https://reimagined-adventure-9m8817p.pages.github.io/docs.html#download" target="_blank" rel="noopener">다운로드</a>
-      </p>
+      <div class="footer-section">
+        <h4>Products</h4>
+        <ul>
+          <li><a href="#products">Robot Multi-Sensor</a></li>
+          <li><a href="#products">Under Display Camera</a></li>
+          <li><a href="#products">Driver Monitoring</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Guides</h4>
+        <ul>
+          <li><a href="https://reimagined-adventure-9m8817p.pages.github.io/robot.html">Robot Multi-Sensor</a></li>
+          <li><a href="https://reimagined-adventure-9m8817p.pages.github.io/underdisplay.html">Under Display Camera</a></li>
+          <li><a href="https://reimagined-adventure-9m8817p.pages.github.io/dms.html">Driver Monitoring</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Community</h4>
+        <ul>
+          <li><a href="https://github.com/LGInnotek" target="_blank">GitHub</a></li>
+          <li><a href="#" target="_blank">Report an Issue</a></li>
+          <li><a href="#" target="_blank">Discussions</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#" target="_blank">LG Innotek</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 LG Innotek. All rights reserved. | LG VisionLink SDK v2.0.0</p>
     </div>
   </footer>
 
 </body>
 </html>
+
