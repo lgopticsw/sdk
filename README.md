@@ -196,7 +196,3 @@ MIT License 또는 Apache 2.0 (각 리포지토리 확인)
 
 최종 업데이트: 2026년 7월
 
----
-
-**LG VisionLink SDK** - 스마트 센서의 미래
-

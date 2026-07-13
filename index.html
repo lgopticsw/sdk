@@ -26,9 +26,34 @@
         <details class="nav-dropdown">
           <summary>Guides</summary>
           <div class="dropdown-menu">
-            <a href="https://reimagined-adventure-9m8817p.pages.github.io/robot.html">Robot Multi-Sensor</a>
-            <a href="https://reimagined-adventure-9m8817p.pages.github.io/underdisplay.html">Under Display Camera</a>
-            <a href="https://reimagined-adventure-9m8817p.pages.github.io/dms.html">Driver Monitoring</a>
+            <details class="sub-nav-dropdown">
+              <summary>Robot Multi-Sensor</summary>
+              <div class="sub-dropdown-menu">
+                <a href="https://reimagined-adventure-9m8817p.pages.github.io/robot.html">Details</a>
+                <a href="https://reimagined-adventure-9m8817p.pages.github.io/robot-guide.html">Guide</a>
+              </div>
+            </details>
+            <details class="sub-nav-dropdown">
+              <summary>Under Display Camera</summary>
+              <div class="sub-dropdown-menu">
+                <a href="https://reimagined-adventure-9m8817p.pages.github.io/underdisplay.html">Details</a>
+                <a href="https://reimagined-adventure-9m8817p.pages.github.io/underdisplay-guide.html">Guide</a>
+              </div>
+            </details>
+            <details class="sub-nav-dropdown">
+              <summary>Driver Monitoring</summary>
+              <div class="sub-dropdown-menu">
+                <a href="https://reimagined-adventure-9m8817p.pages.github.io/dms.html">Details</a>
+                <a href="https://reimagined-adventure-9m8817p.pages.github.io/dms-guide.html">Guide</a>
+              </div>
+            </details>
+            <details class="sub-nav-dropdown">
+              <summary>AI ISP Camera SDK</summary>
+              <div class="sub-dropdown-menu">
+                <a href="https://reimagined-adventure-9m8817p.pages.github.io/aiisp.html">Details</a>
+                <a href="https://reimagined-adventure-9m8817p.pages.github.io/aiisp-guide.html">Guide</a>
+              </div>
+            </details>
           </div>
         </details>
         <a href="https://github.com/LGIT-Optics/SDK-pages" target="_blank" rel="noopener">Download</a>
@@ -40,11 +65,12 @@
   <section class="hero">
     <div class="hero-inner">
       <div class="hero-badge">LG VisionLink · Sensor Solutions</div>
-      <h1><span>Advanced Sensing Technology</span><br />for a Smarter World</h1>
+      <h1>Advanced Sensing Technology with <br /><span>LG VisionLink SDK</span></h1>
       <p>
         LG Innotek's advanced sensor modules and SDKs unlock new possibilities across
-        robotics, automotive, and driver monitoring. We build the future with precise
-        perception and dependable performance.
+        robotics, automotive, driver monitoring, and Jetson-based AI camera pipelines.
+        We build the future with precise perception, dependable performance, and
+        deployment-ready developer tools.
       </p>
       <div class="hero-actions">
         <a href="#products" class="btn btn-primary">Explore Products</a>
@@ -58,7 +84,7 @@
     <div class="section-header">
       <div class="section-badge">Key Features</div>
       <h2>What Our Technology Makes Possible</h2>
-      <p>Powerful capabilities delivered by three advanced sensor modules</p>
+      <p>Powerful capabilities delivered by four advanced sensing solutions</p>
     </div>
     <div class="features-list">
       <div class="feature-item">
@@ -72,14 +98,14 @@
         <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><line x1="9" y1="1" x2="9" y2="4"/><line x1="15" y1="1" x2="15" y2="4"/><line x1="9" y1="20" x2="9" y2="23"/><line x1="15" y1="20" x2="15" y2="23"/><line x1="20" y1="9" x2="23" y2="9"/><line x1="20" y1="14" x2="23" y2="14"/><line x1="1" y1="9" x2="4" y2="9"/><line x1="1" y1="14" x2="4" y2="14"/></svg></div>
         <div class="feature-content">
           <h3>High-Performance Processing</h3>
-          <p>Optimized for the Jetson platform to enable real-time processing.</p>
+          <p>Optimized for Jetson platforms to enable real-time processing and zero-copy camera pipelines.</p>
         </div>
       </div>
       <div class="feature-item">
         <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg></div>
         <div class="feature-content">
           <h3>Accurate Perception</h3>
-          <p>Advanced AI-based algorithms maximize recognition accuracy.</p>
+          <p>Advanced AI-based algorithms maximize recognition accuracy from raw sensor data to final output.</p>
         </div>
       </div>
       <div class="feature-item">
@@ -100,7 +126,7 @@
         <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></div>
         <div class="feature-content">
           <h3>Developer-Friendly</h3>
-          <p>Detailed documentation and sample code accelerate your development.</p>
+          <p>Detailed documentation, installation scripts, and sample code accelerate your development.</p>
         </div>
       </div>
     </div>
@@ -111,7 +137,7 @@
     <div class="section-header">
       <div class="section-badge">Products</div>
       <h2>LG Innotek Sensor Solutions</h2>
-      <p>Sensor modules optimized for the requirements of each field</p>
+      <p>Sensor modules and camera SDKs optimized for each deployment scenario</p>
     </div>
     <div class="products-grid">
       <!-- Product 1: Robot -->
@@ -139,8 +165,8 @@
             <span class="spec-tag">C++</span>
           </div>
           <div class="product-actions">
-            <a href="https://reimagined-adventure-9m8817p.pages.github.io/robot.html" class="learn-more">Learn More</a>
-            <a href="https://github.com/LGIT-Optics/SDK-pages" class="download" target="_blank" rel="noopener">Download SDK</a>
+            <a href="https://reimagined-adventure-9m8817p.pages.github.io/robot.html" class="learn-more">Details</a>
+            <a href="https://reimagined-adventure-9m8817p.pages.github.io/robot-guide.html" class="guide">Guide</a>
           </div>
         </div>
       </div>
@@ -170,8 +196,8 @@
             <span class="spec-tag">Python</span>
           </div>
           <div class="product-actions">
-            <a href="https://reimagined-adventure-9m8817p.pages.github.io/underdisplay.html" class="learn-more">Learn More</a>
-            <a href="https://github.com/LGIT-Optics/SDK-pages" class="download" target="_blank" rel="noopener">Download SDK</a>
+            <a href="https://reimagined-adventure-9m8817p.pages.github.io/underdisplay.html" class="learn-more">Details</a>
+            <a href="https://reimagined-adventure-9m8817p.pages.github.io/underdisplay-guide.html" class="guide">Guide</a>
           </div>
         </div>
       </div>
@@ -201,8 +227,39 @@
             <span class="spec-tag">C#</span>
           </div>
           <div class="product-actions">
-            <a href="https://reimagined-adventure-9m8817p.pages.github.io/dms.html" class="learn-more">Learn More</a>
-            <a href="https://github.com/LGIT-Optics/SDK-pages" class="download" target="_blank" rel="noopener">Download SDK</a>
+            <a href="https://reimagined-adventure-9m8817p.pages.github.io/dms.html" class="learn-more">Details</a>
+            <a href="https://reimagined-adventure-9m8817p.pages.github.io/dms-guide.html" class="guide">Guide</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 4: AI ISP Camera SDK -->
+      <div class="product-card">
+        <div class="product-header">
+          <div class="product-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><line x1="9" y1="1" x2="9" y2="4"/><line x1="15" y1="1" x2="15" y2="4"/><line x1="9" y1="20" x2="9" y2="23"/><line x1="15" y1="20" x2="15" y2="23"/><line x1="20" y1="9" x2="23" y2="9"/><line x1="20" y1="14" x2="23" y2="14"/><line x1="1" y1="9" x2="4" y2="9"/><line x1="1" y1="14" x2="4" y2="14"/></svg></div>
+          <h3>AI ISP Camera SDK</h3>
+          <p class="product-subtext">IMX681 + Zero-Copy CUDA</p>
+        </div>
+        <div class="product-body">
+          <p style="font-size: 14px; color: #6b6b6b; margin-bottom: 16px;">
+            A Jetson-ready SDK package for IMX681 bring-up, RAW10 capture, and AI ISP pipeline development.
+          </p>
+          <ul class="product-features">
+            <li>Automated install for driver, DTBO, boot config, and camera service</li>
+            <li>Sensor Direct camera viewer with live gain and exposure control</li>
+            <li>Zero-copy CUDA reference pipeline with latency statistics</li>
+            <li>Prepared for TensorRT and custom AI ISP stages</li>
+            <li>Validated on Jetson AGX Orin with JetPack 6.2</li>
+          </ul>
+          <div class="product-specs">
+            <span class="spec-tag">JetPack 6.2</span>
+            <span class="spec-tag">IMX681</span>
+            <span class="spec-tag">CUDA 12</span>
+            <span class="spec-tag">C++</span>
+          </div>
+          <div class="product-actions">
+            <a href="https://reimagined-adventure-9m8817p.pages.github.io/aiisp.html" class="learn-more">Details</a>
+            <a href="https://reimagined-adventure-9m8817p.pages.github.io/aiisp-guide.html" class="guide">Guide</a>
           </div>
         </div>
       </div>
@@ -272,7 +329,7 @@
     <div class="section-header">
       <div class="section-badge">Documentation</div>
       <h2>Detailed Developer Guides</h2>
-      <p>APIs and practical usage examples for each module</p>
+      <p>APIs, installation flows, and practical usage examples across each module and SDK package</p>
     </div>
     <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px;">
       <div style="background: white; border: 1px solid #e5e7eb; border-radius: 12px; padding: 24px; transition: all 0.3s;" onmouseover="this.style.transform='translateY(-4px)'; this.style.boxShadow='0 10px 25px rgba(0,0,0,0.1)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 6px rgba(0,0,0,0.07)'">
@@ -289,6 +346,11 @@
         <h3 style="font-size: 18px; font-weight: 700; margin-bottom: 12px;">Sample Code</h3>
         <p style="font-size: 14px; color: #6b6b6b; margin-bottom: 16px;">Production-style snippets and real usage examples for each sensor.</p>
         <a href="https://reimagined-adventure-9m8817p.pages.github.io/dms.html" style="color: #a50034; text-decoration: none; font-weight: 600;">View Guide →</a>
+      </div>
+      <div style="background: white; border: 1px solid #e5e7eb; border-radius: 12px; padding: 24px; transition: all 0.3s;" onmouseover="this.style.transform='translateY(-4px)'; this.style.boxShadow='0 10px 25px rgba(0,0,0,0.1)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 6px rgba(0,0,0,0.07)'">
+        <h3 style="font-size: 18px; font-weight: 700; margin-bottom: 12px;">AI ISP Install Guide</h3>
+        <p style="font-size: 14px; color: #6b6b6b; margin-bottom: 16px;">Jetson bring-up, install.sh workflow, and sample viewer execution for IMX681.</p>
+        <a href="https://reimagined-adventure-9m8817p.pages.github.io/aiisp-guide.html" style="color: #a50034; text-decoration: none; font-weight: 600;">View Guide →</a>
       </div>
     </div>
   </section>
@@ -315,14 +377,16 @@
           <li><a href="#products">Robot Multi-Sensor</a></li>
           <li><a href="#products">Under Display Camera</a></li>
           <li><a href="#products">Driver Monitoring</a></li>
+          <li><a href="https://reimagined-adventure-9m8817p.pages.github.io/aiisp.html">AI ISP Camera SDK</a></li>
         </ul>
       </div>
       <div class="footer-section">
         <h4>Guides</h4>
         <ul>
-          <li><a href="https://reimagined-adventure-9m8817p.pages.github.io/robot.html">Robot Multi-Sensor</a></li>
-          <li><a href="https://reimagined-adventure-9m8817p.pages.github.io/underdisplay.html">Under Display Camera</a></li>
-          <li><a href="https://reimagined-adventure-9m8817p.pages.github.io/dms.html">Driver Monitoring</a></li>
+          <li><a href="robot.html">Robot Multi-Sensor</a></li>
+          <li><a href="underdisplay.html">Under Display Camera</a></li>
+          <li><a href="dms.html">Driver Monitoring</a></li>
+          <li><a href="https://reimagined-adventure-9m8817p.pages.github.io/aiisp-guide.html">AI ISP Camera SDK</a></li>
         </ul>
       </div>
       <div class="footer-section">
@@ -343,9 +407,11 @@
       </div>
     </div>
     <div class="footer-bottom">
-      <p>&copy; 2026 LG Innotek. All rights reserved. | LG VisionLink SDK v2.0.0</p>
+      <p>&copy; 2026 LG Innotek. All rights reserved. | LG VisionLink SDK v1.0.0</p>
     </div>
   </footer>
+
+  <script src="navigation.js"></script>
 
 </body>
 </html>
