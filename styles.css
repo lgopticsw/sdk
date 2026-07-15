@@ -620,6 +620,24 @@ nav a.active::after {
   color: var(--white);
 }
 
+.product-actions .download-btn {
+  background: var(--lg-red);
+  color: var(--white);
+  border: 1px solid var(--lg-red);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+
+.product-actions .download-btn:hover {
+  background: #8a0029;
+  border-color: #8a0029;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(165, 0, 52, 0.2);
+}
+
+/* Legacy .guide class for backward compatibility */
 .product-actions .guide {
   background: var(--lg-red);
   color: var(--white);
