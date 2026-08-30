@@ -913,7 +913,10 @@ footer {
 /* Legacy blocks compatibility */
 .footer-inner {
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 0 auto 40px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 40px;
 }
 
 .footer-logo {
