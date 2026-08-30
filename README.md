@@ -1,198 +1,199 @@
 # LG VisionLink SDK
 
-혁신적인 센서 기술로 로봇, 자동차, 운전자 모니터링 분야의 미래를 만들어갑니다.
+LG VisionLink SDK is a sensor software platform for connecting LG Innotek camera, depth, and multi-sensor solutions to applications.
 
-## 🚀 개요
+It provides product-specific device discovery and control, data acquisition, synchronization, sample applications, and installation guides to support development from hardware validation through application integration.
 
-LG Innotek Advanced Sensor SDK는 세 가지 혁신적인 센서 모듈을 제공하여 다양한 산업 분야의 요구사항을 충족합니다:
+> **UDIR Camera System** is currently a standalone Jetson demonstration system and is not yet integrated with LG VisionLink SDK.
 
-### 1. **Robot 복합 모듈** 🤖
-- **센서**: Stereo + dToF + Radar 통합
-- **플랫폼**: Linux Jetson
-- **특징**: 
-  - 완벽한 3D 환경 인식
-  - 실시간 SLAM 지원
-  - 장애물 감지 및 경로 계획
+## Current Portfolio
 
-### 2. **Under Display Camera** 📷
-- **센서**: Infrared Camera + AI 화질 복원
-- **플랫폼**: Linux Jetson, Windows
-- **특징**:
-  - 디스플레이 하단 최적화
-  - 야간 촬영 지원
-  - 고급 화질 복원 알고리즘
+| Solution | Core capabilities | Target platform | VisionLink integration |
+|---|---|---|---|
+| AI ISP Camera SDK | MIPI camera bring-up, Sensor Direct control, RAW capture, and a CUDA zero-copy pipeline | NVIDIA Jetson | Supported |
+| Robot Multi-Sensor | Stereo, dToF, and radar data with synchronized Framesets | NVIDIA Jetson | Supported |
+| RID Camera SDK | RGB, IR, depth, dual modes, and 3D point-cloud acquisition | Windows | Supported |
+| UDIR Camera System | Behind-display IR camera with TensorRT-based AI image restoration | NVIDIA Jetson | Standalone system |
 
-### 3. **운전자 모니터링 모듈** 👁️
-- **센서**: ToF + IR + RGB
-- **플랫폼**: Windows
-- **특징**:
-  - 눈 움직임 추적
-  - 주의 상태 감지
-  - DMS(Driver Monitoring System) 호환
+### Portfolio at a Glance
 
-## 📋 요구사항
+- **6** sensor integrations
+- Up to **4K** supported resolution
+- **2** target development platforms
+- **4** completed solution projects
 
-### Robot 센서 모듈
-- NVIDIA Jetson Xavier 이상
-- JetPack 5.0 이상
-- CUDA 11.4+
-- ROS 2 Humble
+## Solutions
 
-### Under Display Camera
-- Python 3.8+
-- OpenCV 4.5+
-- PyTorch 1.9+
-- Linux 또는 Windows
+### AI ISP Camera SDK
 
-### DMS (Driver Monitoring System)
-- Windows 10/11 (64-bit)
-- Visual Studio 2019+
-- .NET Framework 4.8+
-- CUDA 12.0+
+An LG VisionLink SDK solution for bringing up a MIPI camera on Jetson and connecting captured frames to GPU-based imaging pipelines.
 
-## 🔧 설치
+Key capabilities:
 
-### Robot Sensor (C++)
-```bash
-git clone https://github.com/LGInnotek/robot-sensor-sdk.git
-cd robot-sensor-sdk
-mkdir build && cd build
-cmake ..
-make -j$(nproc)
-sudo make install
+- Deployment-oriented IMX681 camera bring-up
+- Sensor Direct gain and exposure control
+- RAW10 camera data acquisition
+- CUDA zero-copy reference pipeline
+- Camera Viewer and Zero-Copy Viewer examples
+- Architecture prepared for TensorRT and custom AI ISP stages
+
+Validated environment:
+
+- NVIDIA Jetson AGX Orin
+- JetPack 6.2 / L4T 36.4
+- CUDA 12
+- C / C++
+
+Documentation:
+
+- [Product details](aiisp.html)
+- [Installation and operation guide](aiisp-guide.html)
+
+### Robot Multi-Sensor
+
+An LG VisionLink SDK solution for controlling a Multi Perception Module that combines stereo cameras, dToF, and radar on Jetson.
+
+Key capabilities:
+
+- Direct APIs for individual sensors
+- Time-synchronized Frameset API for multiple sensors
+- Stereo images with optional stereo depth
+- 8×8 dToF distance and status data
+- Radar point clouds with Doppler and SNR
+- MPM GUI Viewer for validating all sensor streams
+
+Validated environment:
+
+- NVIDIA Jetson AGX Orin
+- Ubuntu 22.04
+- JetPack 6.2 / L4T 36.4
+- VisionLink SDK 2.1.1
+- C / C++
+
+Documentation:
+
+- [Product details](robot.html)
+- [Hardware and installation guide](robot-guide.html)
+
+### RID Camera SDK
+
+An LG VisionLink C/C++ SDK for integrating RGB, IR, and structured-light depth data from the LG Innotek RID Camera into Windows applications.
+
+Key capabilities:
+
+- RGB, IR, depth, RGB+IR, and RGB+Depth modes
+- Runtime mode switching without restarting the stream
+- BGR24 images and structured-light 3D points
+- Gain, exposure, and illumination control
+- C API-based device lifecycle management
+- USB authentication and automatic logging
+
+Development environment:
+
+- Windows 10/11 64-bit
+- Visual Studio 2022 / v143 toolset
+- C++17
+- OpenCV 3.4.6 runtime
+
+Documentation:
+
+- [Product details](dms.html)
+- [Windows development guide](dms-guide.html)
+
+### UDIR Camera System
+
+UDIR refers to an **Under Display Infrared Camera** system. It places a DMS IR camera behind an automotive display panel to reduce the camera's visible presence in the cabin.
+
+Jetson-based AI processing restores brightness, contrast, and image detail degraded by transmission through the display before sending the restored frames to the DMS demonstration.
+
+Key capabilities:
+
+- Behind-display IR camera integration
+- 1280×960 RAW10 image acquisition
+- OpenCV V4L2 camera input
+- TensorRT and CUDA-based image restoration
+- Restored and standard monochrome comparison modes
+- Face-region and eye-blink monitoring demonstration
+- PyQt6 UI with a multiprocessing shared-memory pipeline
+
+Validated environment:
+
+- NVIDIA Jetson AGX Orin 64GB
+- Ubuntu 20.04.5
+- JetPack 5 generation / L4T R35.1.3
+- Linux 5.10 Tegra kernel
+- Python, TensorRT, PyCUDA, and PyQt6
+
+Documentation:
+
+- [Product details and evaluation results](underdisplay.html)
+- [Setup and operation guide](underdisplay-guide.html)
+
+## Development Workflow
+
+Each solution uses different hardware and target environments. Follow the verified product-specific guides rather than relying on a generic API or setup process.
+
+1. Select the sensor solution and target platform for the application.
+2. Review the hardware and software requirements in the product guide.
+3. Prepare the required drivers and runtime using the documented installation procedure.
+4. Validate the sensor data path with the supplied viewer or sample application.
+5. Integrate the relevant APIs and data formats into the application.
+
+## Website Documentation
+
+| Page | Description |
+|---|---|
+| [index.html](https://reimagined-adventure-9m8817p.pages.github.io/index.html) | LG VisionLink SDK and sensor solution portfolio |
+| [aiisp.html](https://reimagined-adventure-9m8817p.pages.github.io/aiisp.html) | AI ISP Camera SDK details |
+| [aiisp-guide.html](https://reimagined-adventure-9m8817p.pages.github.io/aiisp-guide.html) | AI ISP installation and example guide |
+| [robot.html](https://reimagined-adventure-9m8817p.pages.github.io/robot.html) | Robot Multi-Sensor details |
+| [robot-guide.html](https://reimagined-adventure-9m8817p.pages.github.io/robot-guide.html) | MPM hardware, installation, and operation guide |
+| [dms.html](https://reimagined-adventure-9m8817p.pages.github.io/dms.html) | RID Camera SDK details |
+| [dms-guide.html](https://reimagined-adventure-9m8817p.pages.github.io/dms-guide.html) | RID Camera Windows development guide |
+| [underdisplay.html](https://reimagined-adventure-9m8817p.pages.github.io/underdisplay.html) | UDIR system details and restoration evaluation |
+| [underdisplay-guide.html](https://reimagined-adventure-9m8817p.pages.github.io/underdisplay-guide.html) | UDIR hardware setup and demonstration guide |
+
+## Repository Structure
+
+```text
+.
+├── index.html
+├── aiisp.html
+├── aiisp-guide.html
+├── robot.html
+├── robot-guide.html
+├── dms.html
+├── dms-guide.html
+├── underdisplay.html
+├── underdisplay-guide.html
+├── styles.css
+├── navigation.js
+├── assets/
+└── images/
+    ├── aiisp/
+    │   ├── setup/
+    │   └── examples/
+    ├── robot/
+    │   ├── hardware/
+    │   └── examples/
+    └── udir/
+        ├── setup/
+        └── evaluation/
 ```
 
-### Under Display Camera (Python)
-```bash
-git clone https://github.com/LGInnotek/underdisplay-camera-sdk.git
-cd underdisplay-camera-sdk
-pip install -r requirements.txt
-python setup.py install
-```
+## Viewing the Website
 
-### DMS SDK (C#)
-```bash
-git clone https://github.com/LGInnotek/dms-sdk.git
-cd dms-sdk
-mkdir build && cd build
-cmake .. -G "Visual Studio 17 2022"
-cmake --build . --config Release
-cmake --install .
-```
+This is a static website, so it can be viewed by opening [index.html](index.html) in a browser. Refer to each product's details and guide pages for complete capabilities and requirements.
 
-## 📚 빠른 시작
+## Resources
 
-### Robot 센서 초기화 (C++)
-```cpp
-#include "robot_sensor.h"
+- [LGIT Optics GitHub](https://github.com/LGIT-Optics)
+- [LG Innotek](https://www.lginnotek.com)
 
-int main() {
-  RobotSensorConfig config;
-  config.stereo_resolution = RESOLUTION_1280x720;
-  config.dtof_fps = 30;
-  config.radar_range = 5.0f;
-  
-  RobotSensorModule sensor;
-  sensor.Initialize(config);
-  
-  while (true) {
-    SensorData data = sensor.GetSensorData(SENSOR_TYPE_STEREO);
-    // 데이터 처리...
-  }
-  return 0;
-}
-```
+## License and Distribution
 
-### Under Display Camera (Python)
-```python
-import lginnotek.underdisplay as ud
+Licensing, distribution terms, and support coverage for each SDK package are defined by the documentation included with its product release.
 
-config = ud.UDCameraConfig()
-config.ir_enabled = True
-config.quality_enhancement = True
+---
 
-camera = ud.UDCameraModule()
-camera.initialize(config)
-
-frame = camera.get_frame(apply_enhancement=True)
-enhanced = camera.apply_quality_restoration(frame)
-```
-
-### DMS 초기화 (C#)
-```csharp
-using LGInnotek.DMS;
-
-DMSConfig config = new DMSConfig()
-{
-  EnableEyeTracking = true,
-  EnableFaceRecognition = true
-};
-
-DMSModule dms = new DMSModule();
-dms.Initialize(config);
-
-Frame frame = camera.CaptureFrame();
-DriverState state = dms.DetectDriverState(frame);
-```
-
-## 🌐 웹사이트
-
-- **홈페이지**: [index.html](index.html)
-- **문서**: [docs.html](docs.html)
-- **GitHub**: https://github.com/LGInnotek
-
-## 📖 API 문서
-
-### Robot Sensor API
-- `Initialize()` - 센서 초기화
-- `GetSensorData()` - 센서 데이터 획득
-- `EnableSLAM()` - SLAM 활성화
-
-### Under Display Camera API
-- `Initialize()` - 카메라 초기화
-- `GetFrame()` - 프레임 획득
-- `ApplyQualityRestoration()` - 화질 복원
-
-### DMS API
-- `Initialize()` - DMS 초기화
-- `DetectDriverState()` - 운전자 상태 감지
-- `GetEyeTrackingData()` - 눈 추적 데이터 획득
-
-자세한 내용은 [문서](docs.html#api)를 참조하세요.
-
-## 🤝 기여하기
-
-버그 리포트, 기능 요청, 풀 요청을 환영합니다!
-
-- [이슈 등록](https://github.com/LGInnotek/robot-sensor-sdk/issues)
-- [풀 요청](https://github.com/LGInnotek/robot-sensor-sdk/pulls)
-
-## 📄 라이선스
-
-MIT License 또는 Apache 2.0 (각 리포지토리 확인)
-
-## 📞 지원 및 문의
-
-- GitHub Issues: 각 리포지토리의 Issues 탭
-- GitHub Discussions: 일반 질문 및 토론
-- Email: support@lginnotek.com (추후 공개)
-
-## 🎯 기술 사양
-
-| 기능 | Robot | Under Display | DMS |
-|------|-------|----------------|-----|
-| 센서 개수 | 3개 | 2개 | 3개 |
-| 해상도 | 1280x720 ~ 4K | FHD ~ 4K | VGA ~ 1080p |
-| FPS | 30 FPS | 30 FPS | 30 FPS |
-| 플랫폼 | Linux Jetson | Linux/Windows | Windows |
-| 언어 | C++ | Python | C# |
-
-## 🔄 버전 정보
-
-- **LG VisionLink SDK**: v2.0.0
-- **Robot Sensor Module**: v1.2.0
-- **Under Display Camera Module**: v1.1.0  
-- **DMS Module**: v1.0.5
-
-최종 업데이트: 2026년 7월
-
+Last updated: August 2026
