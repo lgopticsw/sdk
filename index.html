@@ -27,13 +27,6 @@
           <summary>Guides</summary>
           <div class="dropdown-menu">
             <details class="sub-nav-dropdown">
-              <summary>AI ISP Camera SDK</summary>
-              <div class="sub-dropdown-menu">
-                <a href="https://reimagined-adventure-9m8817p.pages.github.io/aiisp.html">Details</a>
-                <a href="https://reimagined-adventure-9m8817p.pages.github.io/aiisp-guide.html">Guide</a>
-              </div>
-            </details>
-            <details class="sub-nav-dropdown">
               <summary>Robot Multi-Sensor</summary>
               <div class="sub-dropdown-menu">
                 <a href="https://reimagined-adventure-9m8817p.pages.github.io/robot.html">Details</a>
@@ -41,10 +34,10 @@
               </div>
             </details>
             <details class="sub-nav-dropdown">
-              <summary>UDIR Camera</summary>
+              <summary>AI ISP Camera SDK</summary>
               <div class="sub-dropdown-menu">
-                <a href="https://reimagined-adventure-9m8817p.pages.github.io/underdisplay.html">Details</a>
-                <a href="https://reimagined-adventure-9m8817p.pages.github.io/underdisplay-guide.html">Guide</a>
+                <a href="https://reimagined-adventure-9m8817p.pages.github.io/aiisp.html">Details</a>
+                <a href="https://reimagined-adventure-9m8817p.pages.github.io/aiisp-guide.html">Guide</a>
               </div>
             </details>
             <details class="sub-nav-dropdown">
@@ -52,6 +45,13 @@
               <div class="sub-dropdown-menu">
                 <a href="https://reimagined-adventure-9m8817p.pages.github.io/dms.html">Details</a>
                 <a href="https://reimagined-adventure-9m8817p.pages.github.io/dms-guide.html">Guide</a>
+              </div>
+            </details>
+            <details class="sub-nav-dropdown">
+              <summary>UDIR Camera</summary>
+              <div class="sub-dropdown-menu">
+                <a href="https://reimagined-adventure-9m8817p.pages.github.io/underdisplay.html">Details</a>
+                <a href="https://reimagined-adventure-9m8817p.pages.github.io/underdisplay-guide.html">Guide</a>
               </div>
             </details>
           </div>
@@ -140,37 +140,7 @@
       <p>Sensor modules and camera SDKs optimized for each deployment scenario</p>
     </div>
     <div class="products-grid">
-      <!-- AI ISP Camera SDK -->
-      <div class="product-card">
-        <div class="product-header">
-          <div class="product-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><line x1="9" y1="1" x2="9" y2="4"/><line x1="15" y1="1" x2="15" y2="4"/><line x1="9" y1="20" x2="9" y2="23"/><line x1="15" y1="20" x2="15" y2="23"/><line x1="20" y1="9" x2="23" y2="9"/><line x1="20" y1="14" x2="23" y2="14"/><line x1="1" y1="9" x2="4" y2="9"/><line x1="1" y1="14" x2="4" y2="14"/></svg></div>
-          <h3>AI ISP Camera SDK</h3>
-          <p class="product-subtext">AI Camera + Zero-Copy CUDA</p>
-        </div>
-        <div class="product-body">
-          <p style="font-size: 14px; color: #6b6b6b; margin-bottom: 16px;">
-            Bring up a MIPI camera on Jetson and connect captured frames to GPU-accelerated imaging workflows.
-          </p>
-          <ul class="product-features">
-            <li>Automated install for driver, DTBO, boot config, and camera service</li>
-            <li>Sensor Direct camera viewer with live gain and exposure control</li>
-            <li>Zero-copy CUDA reference pipeline with latency statistics</li>
-            <li>Prepared for TensorRT and custom AI ISP stages</li>
-            <li>Validated on Jetson AGX Orin with JetPack 6.2</li>
-          </ul>
-          <div class="product-specs">
-            <span class="spec-tag">JetPack 6.2</span>
-            <span class="spec-tag">MIPI Sensor</span>
-            <span class="spec-tag">CUDA 12</span>
-            <span class="spec-tag">C++</span>
-          </div>
-          <div class="product-actions">
-            <a href="https://reimagined-adventure-9m8817p.pages.github.io/aiisp.html" class="learn-more">Details</a>
-            <a href="https://github.com/LGIT-Optics" target="_blank" rel="noopener" class="download-btn">Download SDK</a>
-          </div>
-        </div>
-      </div>
-      <!-- Product 2: Robot -->
+      <!-- Product 1: Robot -->
       <div class="product-card">
         <div class="product-header">
           <div class="product-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="11" r="2"/><path d="M8.05 7.05a6 6 0 0 1 7.9 0"/><path d="M5.22 4.22a10 10 0 0 1 13.56 0"/><line x1="12" y1="13" x2="12" y2="18"/><line x1="8" y1="18" x2="16" y2="18"/></svg></div>
@@ -201,38 +171,38 @@
         </div>
       </div>
 
-      <!-- Product 3: UDIR Camera -->
+      <!-- Product 2: AI ISP Camera SDK -->
       <div class="product-card">
         <div class="product-header">
-          <div class="product-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg></div>
-          <h3>UDIR Camera System</h3>
-          <p class="product-subtext">Under Display Infrared Camera</p>
+          <div class="product-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><line x1="9" y1="1" x2="9" y2="4"/><line x1="15" y1="1" x2="15" y2="4"/><line x1="9" y1="20" x2="9" y2="23"/><line x1="15" y1="20" x2="15" y2="23"/><line x1="20" y1="9" x2="23" y2="9"/><line x1="20" y1="14" x2="23" y2="14"/><line x1="1" y1="9" x2="4" y2="9"/><line x1="1" y1="14" x2="4" y2="14"/></svg></div>
+          <h3>AI ISP Camera SDK</h3>
+          <p class="product-subtext">AI Camera + Zero-Copy CUDA</p>
         </div>
         <div class="product-body">
           <p style="font-size: 14px; color: #6b6b6b; margin-bottom: 16px;">
-            A DMS infrared camera concealed behind an automotive display, with Jetson AI restoring image quality degraded by panel transmission.
+            Bring up a MIPI camera on Jetson and connect captured frames to GPU-accelerated imaging workflows.
           </p>
           <ul class="product-features">
-            <li>1280×960 RAW10 fixed-focus IR camera</li>
-            <li>Less visually intrusive behind-display integration</li>
-            <li>TensorRT and CUDA restoration of panel degradation</li>
-            <li>Restored and standard mono viewing modes</li>
-            <li>Face and eye-blink monitoring demo</li>
+            <li>Automated install for driver, DTBO, boot config, and camera service</li>
+            <li>Sensor Direct camera viewer with live gain and exposure control</li>
+            <li>Zero-copy CUDA reference pipeline with latency statistics</li>
+            <li>Prepared for TensorRT and custom AI ISP stages</li>
+            <li>Validated on Jetson AGX Orin with JetPack 6.2</li>
           </ul>
           <div class="product-specs">
-            <span class="spec-tag">Jetson AGX Orin</span>
-            <span class="spec-tag">JetPack 5</span>
-            <span class="spec-tag">TensorRT</span>
-            <span class="spec-tag">Python</span>
+            <span class="spec-tag">JetPack 6.2</span>
+            <span class="spec-tag">MIPI Sensor</span>
+            <span class="spec-tag">CUDA 12</span>
+            <span class="spec-tag">C++</span>
           </div>
           <div class="product-actions">
-            <a href="https://reimagined-adventure-9m8817p.pages.github.io/underdisplay.html" class="learn-more">Details</a>
+            <a href="https://reimagined-adventure-9m8817p.pages.github.io/aiisp.html" class="learn-more">Details</a>
             <a href="https://github.com/LGIT-Optics" target="_blank" rel="noopener" class="download-btn">Download SDK</a>
           </div>
         </div>
       </div>
 
-      <!-- Product 4: RID Camera SDK -->
+      <!-- Product 3: RID Camera SDK -->
       <div class="product-card">
         <div class="product-header">
           <div class="product-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7-11-7-11-7z"/><circle cx="12" cy="12" r="3"/></svg></div>
@@ -258,6 +228,37 @@
           </div>
           <div class="product-actions">
             <a href="https://reimagined-adventure-9m8817p.pages.github.io/dms.html" class="learn-more">Details</a>
+            <a href="https://github.com/LGIT-Optics" target="_blank" rel="noopener" class="download-btn">Download SDK</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 4: UDIR Camera -->
+      <div class="product-card">
+        <div class="product-header">
+          <div class="product-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg></div>
+          <h3>UDIR Camera System</h3>
+          <p class="product-subtext">Under Display Infrared Camera</p>
+        </div>
+        <div class="product-body">
+          <p style="font-size: 14px; color: #6b6b6b; margin-bottom: 16px;">
+            A DMS infrared camera concealed behind an automotive display, with Jetson AI restoring image quality degraded by panel transmission.
+          </p>
+          <ul class="product-features">
+            <li>1280×960 RAW10 fixed-focus IR camera</li>
+            <li>Less visually intrusive behind-display integration</li>
+            <li>TensorRT and CUDA restoration of panel degradation</li>
+            <li>Restored and standard mono viewing modes</li>
+            <li>Face and eye-blink monitoring demo</li>
+          </ul>
+          <div class="product-specs">
+            <span class="spec-tag">Jetson AGX Orin</span>
+            <span class="spec-tag">JetPack 5</span>
+            <span class="spec-tag">TensorRT</span>
+            <span class="spec-tag">Python</span>
+          </div>
+          <div class="product-actions">
+            <a href="https://reimagined-adventure-9m8817p.pages.github.io/underdisplay.html" class="learn-more">Details</a>
             <a href="https://github.com/LGIT-Optics" target="_blank" rel="noopener" class="download-btn">Download SDK</a>
           </div>
         </div>
