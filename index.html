@@ -16,47 +16,47 @@
   <!-- Header -->
   <header>
     <div class="header-inner">
-      <a href="index.html" class="logo">
+      <a data-link="home" class="logo">
         <img src="assets/logo-lginnotek.png" alt="LG Innotek logo" class="logo-image" />
         <span class="sr-only">LG VisionLink SDK</span>
       </a>
       <nav>
-        <a href="index.html" class="active">Home</a>
-        <a href="#products">Products</a>
+        <a data-link="home" class="active">Home</a>
+        <a data-link="products">Products</a>
         <details class="nav-dropdown">
           <summary>Guides</summary>
           <div class="dropdown-menu">
             <details class="sub-nav-dropdown">
               <summary>Robot Multi-Sensor</summary>
               <div class="sub-dropdown-menu">
-                <a href="https://reimagined-adventure-9m8817p.pages.github.io/robot.html">Details</a>
-                <a href="https://reimagined-adventure-9m8817p.pages.github.io/robot-guide.html">Guide</a>
+                <a data-link="robotDetails">Details</a>
+                <a data-link="robotGuide">Guide</a>
               </div>
             </details>
             <details class="sub-nav-dropdown">
               <summary>AI ISP Camera SDK</summary>
               <div class="sub-dropdown-menu">
-                <a href="https://reimagined-adventure-9m8817p.pages.github.io/aiisp.html">Details</a>
-                <a href="https://reimagined-adventure-9m8817p.pages.github.io/aiisp-guide.html">Guide</a>
+                <a data-link="aiispDetails">Details</a>
+                <a data-link="aiispGuide">Guide</a>
               </div>
             </details>
             <details class="sub-nav-dropdown">
               <summary>RID Camera SDK</summary>
               <div class="sub-dropdown-menu">
-                <a href="https://reimagined-adventure-9m8817p.pages.github.io/dms.html">Details</a>
-                <a href="https://reimagined-adventure-9m8817p.pages.github.io/dms-guide.html">Guide</a>
+                <a data-link="dmsDetails">Details</a>
+                <a data-link="dmsGuide">Guide</a>
               </div>
             </details>
             <details class="sub-nav-dropdown">
               <summary>UDIR Camera</summary>
               <div class="sub-dropdown-menu">
-                <a href="https://reimagined-adventure-9m8817p.pages.github.io/underdisplay.html">Details</a>
-                <a href="https://reimagined-adventure-9m8817p.pages.github.io/underdisplay-guide.html">Guide</a>
+                <a data-link="underdisplayDetails">Details</a>
+                <a data-link="underdisplayGuide">Guide</a>
               </div>
             </details>
           </div>
         </details>
-        <a href="https://github.com/LGIT-Optics/SDK-pages" target="_blank" rel="noopener">Download</a>
+        <a data-link="sdkPages" target="_blank" rel="noopener">Download</a>
       </nav>
     </div>
   </header>
@@ -68,13 +68,13 @@
       <h1>Advanced Sensing Technology with <br /><span>LG VisionLink SDK</span></h1>
       <p>
         LG VisionLink SDK provides a common foundation for integrating LG Innotek camera,
-        depth, and multi-sensor solutions across Jetson and Windows. Move from hardware
+        depth, and multi-sensor solutions across NVIDIA and Windows platforms. Move from hardware
         bring-up to application development with focused APIs, reference applications,
         and product-specific guides.
       </p>
       <div class="hero-actions">
-        <a href="#products" class="btn btn-primary">Explore Products</a>
-        <a href="https://github.com/LGIT-Optics" target="_blank" rel="noopener" class="btn btn-secondary">Download SDK</a>
+        <a data-link="products" class="btn btn-primary">Explore Products</a>
+        <a data-link="allSdks" target="_blank" rel="noopener" class="btn btn-secondary">Download SDK</a>
       </div>
     </div>
   </section>
@@ -161,12 +161,12 @@
           <div class="product-specs">
             <span class="spec-tag">Jetson AGX Orin</span>
             <span class="spec-tag">JetPack 6.2</span>
-            <span class="spec-tag">Ubuntu 22.04</span>
+            <span class="spec-tag">GMSL</span>
             <span class="spec-tag">C / C++</span>
           </div>
           <div class="product-actions">
-            <a href="https://reimagined-adventure-9m8817p.pages.github.io/robot.html" class="learn-more">Details</a>
-            <a href="https://github.com/LGIT-Optics/multi-perception-driver-sdk" target="_blank" rel="noopener" class="download-btn">Download SDK</a>
+            <a data-link="robotDetails" class="learn-more">Details</a>
+            <a data-link="robotSdk" target="_blank" rel="noopener" class="download-btn">Download SDK</a>
           </div>
         </div>
       </div>
@@ -187,17 +187,17 @@
             <li>Sensor Direct camera viewer with live gain and exposure control</li>
             <li>Zero-copy CUDA reference pipeline with latency statistics</li>
             <li>Prepared for TensorRT and custom AI ISP stages</li>
-            <li>Validated on Jetson AGX Orin with JetPack 6.2</li>
           </ul>
           <div class="product-specs">
+            <span class="spec-tag">Jetson AGX Orin</span>
             <span class="spec-tag">JetPack 6.2</span>
             <span class="spec-tag">MIPI Sensor</span>
-            <span class="spec-tag">CUDA 12</span>
+            <span class="spec-tag">CUDA</span>
             <span class="spec-tag">C++</span>
           </div>
           <div class="product-actions">
-            <a href="https://reimagined-adventure-9m8817p.pages.github.io/aiisp.html" class="learn-more">Details</a>
-            <a href="https://github.com/LGIT-Optics/ai-isp-driver-sdk" target="_blank" rel="noopener" class="download-btn">Download SDK</a>
+            <a data-link="aiispDetails" class="learn-more">Details</a>
+            <a data-link="aiispSdk" target="_blank" rel="noopener" class="download-btn">Download SDK</a>
           </div>
         </div>
       </div>
@@ -218,17 +218,18 @@
             <li>Instant mode switching without stream restart</li>
             <li>BGR24 images and structured-light 3D points</li>
             <li>Runtime gain, exposure, and illumination control</li>
-            <li>USB authentication and automatic logging</li>
           </ul>
           <div class="product-specs">
             <span class="spec-tag">Windows</span>
-            <span class="spec-tag">C++17</span>
+            <span class="spec-tag">Jetson AGX Orin</span>
+            <span class="spec-tag">C++</span>
             <span class="spec-tag">RGB / IR</span>
             <span class="spec-tag">Depth</span>
+            <span class="spec-tag">GMSL</span>
           </div>
           <div class="product-actions">
-            <a href="https://reimagined-adventure-9m8817p.pages.github.io/dms.html" class="learn-more">Details</a>
-            <a href="https://github.com/LGIT-Optics/rgb_ir_depth" target="_blank" rel="noopener" class="download-btn">Download SDK</a>
+            <a data-link="dmsDetails" class="learn-more">Details</a>
+            <a data-link="dmsSdk" target="_blank" rel="noopener" class="download-btn">Download SDK</a>
           </div>
         </div>
       </div>
@@ -254,12 +255,13 @@
           <div class="product-specs">
             <span class="spec-tag">Jetson AGX Orin</span>
             <span class="spec-tag">JetPack 5</span>
+            <span class="spec-tag">GMSL</span>
             <span class="spec-tag">TensorRT</span>
             <span class="spec-tag">Python</span>
           </div>
           <div class="product-actions">
-            <a href="https://reimagined-adventure-9m8817p.pages.github.io/underdisplay.html" class="learn-more">Details</a>
-            <a href="https://github.com/LGIT-Optics/under_display_ir" target="_blank" rel="noopener" class="download-btn">Download SDK</a>
+            <a data-link="underdisplayDetails" class="learn-more">Details</a>
+            <a data-link="underdisplaySdk" target="_blank" rel="noopener" class="download-btn">Download SDK</a>
           </div>
         </div>
       </div>
@@ -335,22 +337,22 @@
       <div style="background: white; border: 1px solid #e5e7eb; border-radius: 12px; padding: 24px; transition: all 0.3s;" onmouseover="this.style.transform='translateY(-4px)'; this.style.boxShadow='0 10px 25px rgba(0,0,0,0.1)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 6px rgba(0,0,0,0.07)'">
         <h3 style="font-size: 18px; font-weight: 700; margin-bottom: 12px;"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" style="width: 20px; height: 20px; display: inline; margin-right: 8px; vertical-align: -4px;"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><line x1="9" y1="1" x2="9" y2="4"/><line x1="15" y1="1" x2="15" y2="4"/><line x1="9" y1="20" x2="9" y2="23"/><line x1="15" y1="20" x2="15" y2="23"/><line x1="20" y1="9" x2="23" y2="9"/><line x1="20" y1="14" x2="23" y2="14"/><line x1="1" y1="9" x2="4" y2="9"/><line x1="1" y1="14" x2="4" y2="14"/></svg>Robot Multi-Sensor Guide</h3>
         <p style="font-size: 14px; color: #6b6b6b; margin-bottom: 16px;">Hardware setup, driver installation, MPM viewer, and sensor API examples.</p>
-        <a href="https://reimagined-adventure-9m8817p.pages.github.io/robot-guide.html" style="color: #a50034; text-decoration: none; font-weight: 600;">View Guide →</a>
+        <a data-link="robotGuide" style="color: #a50034; text-decoration: none; font-weight: 600;">View Guide →</a>
       </div>
       <div style="background: white; border: 1px solid #e5e7eb; border-radius: 12px; padding: 24px; transition: all 0.3s;" onmouseover="this.style.transform='translateY(-4px)'; this.style.boxShadow='0 10px 25px rgba(0,0,0,0.1)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 6px rgba(0,0,0,0.07)'">
         <h3 style="font-size: 18px; font-weight: 700; margin-bottom: 12px;"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" style="width: 20px; height: 20px; display: inline; margin-right: 8px; vertical-align: -4px;"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>UDIR Camera Guide</h3>
         <p style="font-size: 14px; color: #6b6b6b; margin-bottom: 16px;">Jetson hardware setup, restoration and mono modes, recording, and DMS demo operation.</p>
-        <a href="https://reimagined-adventure-9m8817p.pages.github.io/underdisplay-guide.html" style="color: #a50034; text-decoration: none; font-weight: 600;">View Guide →</a>
+        <a data-link="underdisplayGuide" style="color: #a50034; text-decoration: none; font-weight: 600;">View Guide →</a>
       </div>
       <div style="background: white; border: 1px solid #e5e7eb; border-radius: 12px; padding: 24px; transition: all 0.3s;" onmouseover="this.style.transform='translateY(-4px)'; this.style.boxShadow='0 10px 25px rgba(0,0,0,0.1)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 6px rgba(0,0,0,0.07)'">
         <h3 style="font-size: 18px; font-weight: 700; margin-bottom: 12px;"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" style="width: 20px; height: 20px; display: inline; margin-right: 8px; vertical-align: -4px;"><path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7-11-7-11-7z"/><circle cx="12" cy="12" r="3"/></svg>RID Camera Windows Guide</h3>
         <p style="font-size: 14px; color: #6b6b6b; margin-bottom: 16px;">Visual Studio setup, API lifecycle, runtime deployment, and troubleshooting.</p>
-        <a href="https://reimagined-adventure-9m8817p.pages.github.io/dms-guide.html" style="color: #a50034; text-decoration: none; font-weight: 600;">View Guide →</a>
+        <a data-link="dmsGuide" style="color: #a50034; text-decoration: none; font-weight: 600;">View Guide →</a>
       </div>
       <div style="background: white; border: 1px solid #e5e7eb; border-radius: 12px; padding: 24px; transition: all 0.3s;" onmouseover="this.style.transform='translateY(-4px)'; this.style.boxShadow='0 10px 25px rgba(0,0,0,0.1)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 6px rgba(0,0,0,0.07)'">
         <h3 style="font-size: 18px; font-weight: 700; margin-bottom: 12px;"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" style="width: 20px; height: 20px; display: inline; margin-right: 8px; vertical-align: -4px;"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><line x1="9" y1="1" x2="9" y2="4"/><line x1="15" y1="1" x2="15" y2="4"/><line x1="9" y1="20" x2="9" y2="23"/><line x1="15" y1="20" x2="15" y2="23"/><line x1="20" y1="9" x2="23" y2="9"/><line x1="20" y1="14" x2="23" y2="14"/><line x1="1" y1="9" x2="4" y2="9"/><line x1="1" y1="14" x2="4" y2="14"/></svg>AI ISP Camera SDK Guide</h3>
         <p style="font-size: 14px; color: #6b6b6b; margin-bottom: 16px;">Jetson bring-up, Kernel module installation, and sample viewer execution for AI ISP workflows.</p>
-        <a href="https://reimagined-adventure-9m8817p.pages.github.io/aiisp-guide.html" style="color: #a50034; text-decoration: none; font-weight: 600;">View Guide →</a>
+        <a data-link="aiispGuide" style="color: #a50034; text-decoration: none; font-weight: 600;">View Guide →</a>
       </div>
     </div>
   </section>
@@ -360,7 +362,7 @@
     <div class="cta-inner">
       <h2>Start Building with LG VisionLink SDK</h2>
       <p>Explore the solution that matches your hardware, platform, and perception workflow.</p>
-      <a href="https://github.com/LGIT-Optics" class="btn btn-secondary" target="_blank" rel="noopener">Explore SDKs on GitHub</a>
+      <a data-link="allSdks" class="btn btn-secondary" target="_blank" rel="noopener">Explore SDKs on GitHub</a>
     </div>
   </div>
 
@@ -374,26 +376,26 @@
       <div class="footer-section">
         <h4>Products</h4>
         <ul>
-          <li><a href="https://reimagined-adventure-9m8817p.pages.github.io/aiisp.html">AI ISP Camera SDK</a></li>
-          <li><a href="https://reimagined-adventure-9m8817p.pages.github.io/robot.html">Robot Multi-Sensor</a></li>
-          <li><a href="https://reimagined-adventure-9m8817p.pages.github.io/dms.html">RID Camera SDK</a></li>
-          <li><a href="https://reimagined-adventure-9m8817p.pages.github.io/underdisplay.html">UDIR Camera System</a></li>
+          <li><a data-link="aiispDetails">AI ISP Camera SDK</a></li>
+          <li><a data-link="robotDetails">Robot Multi-Sensor</a></li>
+          <li><a data-link="dmsDetails">RID Camera SDK</a></li>
+          <li><a data-link="underdisplayDetails">UDIR Camera System</a></li>
         </ul>
       </div>
       <div class="footer-section">
         <h4>Guides</h4>
         <ul>
-          <li><a href="https://reimagined-adventure-9m8817p.pages.github.io/aiisp-guide.html">AI ISP Guide</a></li>
-          <li><a href="https://reimagined-adventure-9m8817p.pages.github.io/robot-guide.html">Robot Guide</a></li>
-          <li><a href="https://reimagined-adventure-9m8817p.pages.github.io/dms-guide.html">RID Camera Guide</a></li>
-          <li><a href="https://reimagined-adventure-9m8817p.pages.github.io/underdisplay-guide.html">UDIR Guide</a></li>
+          <li><a data-link="aiispGuide">AI ISP Guide</a></li>
+          <li><a data-link="robotGuide">Robot Guide</a></li>
+          <li><a data-link="dmsGuide">RID Camera Guide</a></li>
+          <li><a data-link="underdisplayGuide">UDIR Guide</a></li>
         </ul>
       </div>
       <div class="footer-section">
         <h4>Resources</h4>
         <ul>
-          <li><a href="https://github.com/LGIT-Optics" target="_blank" rel="noopener">GitHub Organization</a></li>
-          <li><a href="https://www.lginnotek.com" target="_blank" rel="noopener">LG Innotek</a></li>
+          <li><a data-link="allSdks" target="_blank" rel="noopener">GitHub Organization</a></li>
+          <li><a data-link="lgInnotekWebsite" target="_blank" rel="noopener">LG Innotek</a></li>
         </ul>
       </div>
     </div>
@@ -402,6 +404,7 @@
     </div>
   </footer>
 
+  <script src="links.js"></script>
   <script src="navigation.js"></script>
 
 </body>
