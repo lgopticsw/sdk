@@ -162,7 +162,7 @@
             <span class="spec-tag">Jetson AGX Orin</span>
             <span class="spec-tag">JetPack 6.2</span>
             <span class="spec-tag">GMSL</span>
-            <span class="spec-tag">C / C++</span>
+            <span class="spec-tag">C/C++</span>
           </div>
           <div class="product-actions">
             <a data-link="robotDetails" class="learn-more">Details</a>
@@ -176,7 +176,7 @@
         <div class="product-header">
           <div class="product-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><line x1="9" y1="1" x2="9" y2="4"/><line x1="15" y1="1" x2="15" y2="4"/><line x1="9" y1="20" x2="9" y2="23"/><line x1="15" y1="20" x2="15" y2="23"/><line x1="20" y1="9" x2="23" y2="9"/><line x1="20" y1="14" x2="23" y2="14"/><line x1="1" y1="9" x2="4" y2="9"/><line x1="1" y1="14" x2="4" y2="14"/></svg></div>
           <h3>AI ISP Camera SDK</h3>
-          <p class="product-subtext">AI Camera + Zero-Copy CUDA</p>
+          <p class="product-subtext">Camera + Zero-Copy CUDA</p>
         </div>
         <div class="product-body">
           <p style="font-size: 14px; color: #6b6b6b; margin-bottom: 16px;">
@@ -191,9 +191,9 @@
           <div class="product-specs">
             <span class="spec-tag">Jetson AGX Orin</span>
             <span class="spec-tag">JetPack 6.2</span>
-            <span class="spec-tag">MIPI Sensor</span>
-            <span class="spec-tag">CUDA</span>
+            <span class="spec-tag">MIPI</span>
             <span class="spec-tag">C++</span>
+            <span class="spec-tag">CUDA</span>
           </div>
           <div class="product-actions">
             <a data-link="aiispDetails" class="learn-more">Details</a>
@@ -202,11 +202,42 @@
         </div>
       </div>
 
-      <!-- Product 3: RID Camera SDK -->
+      <!-- Product 3: EIS Camera SDK -->
+      <div class="product-card">
+        <div class="product-header">
+          <div class="product-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 3H5a2 2 0 0 0-2 2v3M16 3h3a2 2 0 0 1 2 2v3M21 16v3a2 2 0 0 1-2 2h-3M8 21H5a2 2 0 0 1-2-2v-3"/><circle cx="12" cy="12" r="3"/></svg></div>
+          <h3>EIS Camera SDK</h3>
+          <p class="product-subtext">Camera + IMU + Stabilization</p>
+        </div>
+        <div class="product-body">
+          <p style="font-size: 14px; color: #6b6b6b; margin-bottom: 16px;">
+            A Jetson SDK combining camera frames and IMU motion data to stabilize on-robot vision under dynamic motion.
+          </p>
+          <ul class="product-features">
+            <li>IMU-driven real-time image stabilization<br />(ICM-45686-S · 6-axis · 400 Hz)</li>
+            <li>Camera–IMU timestamp alignment</li>
+            <li>CUDA-accelerated image warping</li>
+            <li>Local viewer for EIS ON/OFF comparison, tuning, and signal evaluation</li>
+            <li>Customizable tuning recipes for diverse robot motion profiles<br />(Quadruped · Biped · AMR · AVR)</li>
+          </ul>
+          <div class="product-specs">
+            <span class="spec-tag">Jetson AGX Orin</span>
+            <span class="spec-tag">JetPack 6.2</span>
+            <span class="spec-tag">GMSL2</span>
+            <span class="spec-tag">C++</span>
+            <span class="spec-tag">CUDA</span>
+          </div>
+          <div class="product-actions">
+            <a href="http://150.150.87.154:8080/" target="_blank" rel="noopener" class="learn-more" title="Accessible only on the internal network">Access EIS · Internal Only</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 4: RID Camera SDK -->
       <div class="product-card">
         <div class="product-header">
           <div class="product-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7-11-7-11-7z"/><circle cx="12" cy="12" r="3"/></svg></div>
-          <h3>VisionLink RID Camera SDK</h3>
+          <h3>RID Camera SDK</h3>
           <p class="product-subtext">RGB + IR + Structured-Light Depth</p>
         </div>
         <div class="product-body">
@@ -222,10 +253,8 @@
           <div class="product-specs">
             <span class="spec-tag">Windows</span>
             <span class="spec-tag">Jetson AGX Orin</span>
-            <span class="spec-tag">C++</span>
-            <span class="spec-tag">RGB / IR</span>
-            <span class="spec-tag">Depth</span>
             <span class="spec-tag">GMSL</span>
+            <span class="spec-tag">C++</span>
           </div>
           <div class="product-actions">
             <a data-link="dmsDetails" class="learn-more">Details</a>
@@ -234,7 +263,7 @@
         </div>
       </div>
 
-      <!-- Product 4: UDIR Camera -->
+      <!-- Product 5: UDIR Camera -->
       <div class="product-card">
         <div class="product-header">
           <div class="product-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg></div>
@@ -256,8 +285,8 @@
             <span class="spec-tag">Jetson AGX Orin</span>
             <span class="spec-tag">JetPack 5</span>
             <span class="spec-tag">GMSL</span>
-            <span class="spec-tag">TensorRT</span>
             <span class="spec-tag">Python</span>
+            <span class="spec-tag">TensorRT</span>
           </div>
           <div class="product-actions">
             <a data-link="underdisplayDetails" class="learn-more">Details</a>
@@ -277,8 +306,8 @@
     </div>
     <div class="tech-specs">
       <div class="spec-card highlight">
-        <div class="spec-number">6</div>
-        <div class="spec-label">Supported Sensor Integrations<br />RGB · IR · Stereo · dToF · Radar · RGBIR</div>
+        <div class="spec-number">7</div>
+        <div class="spec-label">Supported Sensor Integrations<br />RGB · IR · Stereo · dToF · Radar · RGBIR · IMU</div>
       </div>
       <div class="spec-card">
         <div class="spec-number">4K</div>
@@ -289,8 +318,8 @@
         <div class="spec-label">Supported Platforms<br />NVIDIA Jetson · Windows</div>
       </div>
       <div class="spec-card highlight">
-        <div class="spec-number">4</div>
-        <div class="spec-label">Completed Solution Projects<br />AI ISP · Robot MPM · UDIR · RID</div>
+        <div class="spec-number">5</div>
+        <div class="spec-label">Completed Solution Projects<br />AI ISP · Robot MPM · UDIR · RID· EIS </div>
       </div>
     </div>
   </section>
