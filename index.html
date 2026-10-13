@@ -54,6 +54,13 @@
                 <a data-link="underdisplayGuide">Guide</a>
               </div>
             </details>
+            <details class="sub-nav-dropdown">
+              <summary>RPi Pan/Tilt Camera SDK</summary>
+              <div class="sub-dropdown-menu">
+                <a data-link="rpiDetails">Details</a>
+                <a data-link="rpiGuide">Guide</a>
+              </div>
+            </details>
           </div>
         </details>
         <a data-link="sdkPages" target="_blank" rel="noopener">Download</a>
@@ -68,7 +75,7 @@
       <h1>Advanced Sensing Technology with <br /><span>LG VisionLink SDK</span></h1>
       <p>
         LG VisionLink SDK provides a common foundation for integrating LG Innotek camera,
-        depth, and multi-sensor solutions across NVIDIA and Windows platforms. Move from hardware
+        depth, and multi-sensor solutions across NVIDIA, Raspberry Pi, and Windows platforms. Move from hardware
         bring-up to application development with focused APIs, reference applications,
         and product-specific guides.
       </p>
@@ -223,7 +230,7 @@
           <div class="product-specs">
             <span class="spec-tag">Jetson AGX Orin</span>
             <span class="spec-tag">JetPack 6.2</span>
-            <span class="spec-tag">GMSL2</span>
+            <span class="spec-tag">GMSL</span>
             <span class="spec-tag">C++</span>
             <span class="spec-tag">CUDA</span>
           </div>
@@ -294,6 +301,37 @@
           </div>
         </div>
       </div>
+
+      <!-- Product 6: Raspberry Pi Pan/Tilt Camera SDK -->
+      <div class="product-card">
+        <div class="product-header">
+          <div class="product-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="6" width="18" height="12" rx="2"/><circle cx="12" cy="12" r="3"/><line x1="7" y1="3" x2="7" y2="6"/><line x1="17" y1="3" x2="17" y2="6"/></svg></div>
+          <h3>RPi Pan/Tilt Camera SDK</h3>
+          <p class="product-subtext">Camera + ISP + Pan/Tilt</p>
+        </div>
+        <div class="product-body">
+          <p style="font-size: 14px; color: #6b6b6b; margin-bottom: 16px;">
+            A Raspberry Pi Zero 2 W package for bringing up a 4K camera with a custom libcamera build and a pan/tilt actuator.
+          </p>
+          <ul class="product-features">
+            <li>One-step install of camera and tilt kernel drivers, DT overlay, and libcamera</li>
+            <li>3840×2160 and binned 2016×1512 RAW10 modes</li>
+            <li>ISP-tuned libcamera build for rpicam-* apps</li>
+            <li>pantilt-viewer sample with live preview and JPEG capture</li>
+          </ul>
+          <div class="product-specs">
+            <span class="spec-tag">Raspberry Pi Zero 2 W</span>
+            <span class="spec-tag">Bookworm 32-bit</span>
+            <span class="spec-tag">MIPI</span>
+            <span class="spec-tag">libcamera</span>
+            <span class="spec-tag">C++</span>
+          </div>
+          <div class="product-actions">
+            <a data-link="rpiDetails" class="learn-more">Details</a>
+            <a data-link="rpiSdk" download class="download-btn">Download SDK</a>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -314,12 +352,12 @@
         <div class="spec-label">Maximum Supported Resolution</div>
       </div>
       <div class="spec-card">
-        <div class="spec-number">2</div>
-        <div class="spec-label">Supported Platforms<br />NVIDIA Jetson · Windows</div>
+        <div class="spec-number">3</div>
+        <div class="spec-label">Supported Platforms<br />NVIDIA Jetson · Raspberry Pi · Windows</div>
       </div>
       <div class="spec-card highlight">
-        <div class="spec-number">5</div>
-        <div class="spec-label">Completed Solution Projects<br />AI ISP · Robot MPM · UDIR · RID· EIS </div>
+        <div class="spec-number">6</div>
+        <div class="spec-label">Completed Solution Projects<br />AI ISP · Robot MPM · UDIR · RID · EIS · RPi Pan/Tilt</div>
       </div>
     </div>
   </section>
@@ -374,6 +412,11 @@
         <a data-link="underdisplayGuide" style="color: #a50034; text-decoration: none; font-weight: 600;">View Guide →</a>
       </div>
       <div style="background: white; border: 1px solid #e5e7eb; border-radius: 12px; padding: 24px; transition: all 0.3s;" onmouseover="this.style.transform='translateY(-4px)'; this.style.boxShadow='0 10px 25px rgba(0,0,0,0.1)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 6px rgba(0,0,0,0.07)'">
+        <h3 style="font-size: 18px; font-weight: 700; margin-bottom: 12px;"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" style="width: 20px; height: 20px; display: inline; margin-right: 8px; vertical-align: -4px;"><rect x="3" y="6" width="18" height="12" rx="2"/><circle cx="12" cy="12" r="3"/><line x1="7" y1="3" x2="7" y2="6"/><line x1="17" y1="3" x2="17" y2="6"/></svg>RPi Pan/Tilt Camera SDK Guide</h3>
+        <p style="font-size: 14px; color: #6b6b6b; margin-bottom: 16px;">OS flashing, driver and libcamera installation, video verification, and pan/tilt sample app.</p>
+        <a data-link="rpiGuide" style="color: #a50034; text-decoration: none; font-weight: 600;">View Guide →</a>
+      </div>
+      <div style="background: white; border: 1px solid #e5e7eb; border-radius: 12px; padding: 24px; transition: all 0.3s;" onmouseover="this.style.transform='translateY(-4px)'; this.style.boxShadow='0 10px 25px rgba(0,0,0,0.1)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 6px rgba(0,0,0,0.07)'">
         <h3 style="font-size: 18px; font-weight: 700; margin-bottom: 12px;"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" style="width: 20px; height: 20px; display: inline; margin-right: 8px; vertical-align: -4px;"><path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7-11-7-11-7z"/><circle cx="12" cy="12" r="3"/></svg>RID Camera Windows Guide</h3>
         <p style="font-size: 14px; color: #6b6b6b; margin-bottom: 16px;">Visual Studio setup, API lifecycle, runtime deployment, and troubleshooting.</p>
         <a data-link="dmsGuide" style="color: #a50034; text-decoration: none; font-weight: 600;">View Guide →</a>
@@ -409,6 +452,7 @@
           <li><a data-link="robotDetails">Robot Multi-Sensor</a></li>
           <li><a data-link="dmsDetails">RID Camera SDK</a></li>
           <li><a data-link="underdisplayDetails">UDIR Camera System</a></li>
+          <li><a data-link="rpiDetails">RPi Pan/Tilt Camera SDK</a></li>
         </ul>
       </div>
       <div class="footer-section">
@@ -418,6 +462,7 @@
           <li><a data-link="robotGuide">Robot Guide</a></li>
           <li><a data-link="dmsGuide">RID Camera Guide</a></li>
           <li><a data-link="underdisplayGuide">UDIR Guide</a></li>
+          <li><a data-link="rpiGuide">RPi Pan/Tilt Guide</a></li>
         </ul>
       </div>
       <div class="footer-section">

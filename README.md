@@ -14,6 +14,7 @@ It provides product-specific device discovery and control, data acquisition, syn
 | Robot Multi-Sensor | Stereo, dToF, and radar data with synchronized Framesets | NVIDIA Jetson | Supported |
 | RID Camera SDK | RGB, IR, depth, dual modes, and 3D point-cloud acquisition | Windows | Supported |
 | UDIR Camera System | Behind-display IR camera with TensorRT-based AI image restoration | NVIDIA Jetson | Standalone system |
+| RPi Pan/Tilt Camera SDK | IMX681 4K camera bring-up with kernel drivers, custom libcamera, and pan/tilt sample app | Raspberry Pi Zero 2 W | Standalone package |
 
 ### Portfolio at a Glance
 
@@ -150,8 +151,10 @@ Each solution uses different hardware and target environments. Follow the verifi
 | [robot-guide.html](https://reimagined-adventure-9m8817p.pages.github.io/robot-guide.html) | MPM hardware, installation, and operation guide |
 | [dms.html](https://reimagined-adventure-9m8817p.pages.github.io/dms.html) | RID Camera SDK details |
 | [dms-guide.html](https://reimagined-adventure-9m8817p.pages.github.io/dms-guide.html) | RID Camera Windows development guide |
-| [underdisplay.html](https://reimagined-adventure-9m8817p.pages.github.io/underdisplay.html) | UDIR system details and restoration evaluation |
+| [underdisplay.html](https://reimagined-adventure-9m8817p.pages.github.io/underdisplay.html) | UDIR system details and restoration evaluation | |
 | [underdisplay-guide.html](https://reimagined-adventure-9m8817p.pages.github.io/underdisplay-guide.html) | UDIR hardware setup and demonstration guide |
+| [rpi-camera.html](https://reimagined-adventure-9m8817p.pages.github.io/rpi-camera.html) | RPi Pan/Tilt Camera SDK details
+| [rpi-camera-guide.html](https://reimagined-adventure-9m8817p.pages.github.io/rpi-camera-guide.html) | RPi Pan/Tilt Camera full installation guide |
 
 ## Repository Structure
 

@@ -10,6 +10,8 @@ const SITE_LINKS = {
   dmsGuide: 'https://reimagined-adventure-9m8817p.pages.github.io/dms-guide.html',
   underdisplayDetails: 'https://reimagined-adventure-9m8817p.pages.github.io/underdisplay.html',
   underdisplayGuide: 'https://reimagined-adventure-9m8817p.pages.github.io/underdisplay-guide.html',
+  rpiDetails: 'https://reimagined-adventure-9m8817p.pages.github.io/rpi-camera.html',
+  rpiGuide: 'https://reimagined-adventure-9m8817p.pages.github.io/rpi-camera-guide.html',
 
   allSdks: 'https://github.com/LGIT-Optics',
   sdkPages: 'https://github.com/LGIT-Optics/SDK-pages',
