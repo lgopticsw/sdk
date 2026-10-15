@@ -17,8 +17,9 @@ const SITE_LINKS = {
   sdkPages: 'https://github.com/LGIT-Optics/SDK-pages',
   robotSdk: 'https://github.com/LGIT-Optics/multi-perception-driver-sdk',
   aiispSdk: 'https://github.com/LGIT-Optics/ai-isp-driver-sdk',
-  dmsSdk: 'https://github.com/LGIT-Optics/rgb_ir_depth',
-  underdisplaySdk: 'https://github.com/LGIT-Optics/under_display_ir',
+  dmsSdk: 'https://github.com/LGIT-Optics/rgb-ir-depth',
+  underdisplaySdk: 'https://github.com/LGIT-Optics/under-display-ir',
+  rpiSdk: 'https://github.com/LGIT-Optics/rpi-pantilt-camera',
 
   lgInnotekGithub: 'https://github.com/LGInnotek',
   lgInnotekWebsite: 'https://www.lginnotek.com'
