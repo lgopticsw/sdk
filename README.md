@@ -141,49 +141,6 @@ Each solution uses different hardware and target environments. Follow the verifi
 5. Integrate the relevant APIs and data formats into the application.
 
 ## Website Documentation
-
-| Page | Description |
-|---|---|
-| [index.html](https://reimagined-adventure-9m8817p.pages.github.io/index.html) | LG VisionLink SDK and sensor solution portfolio |
-| [aiisp.html](https://reimagined-adventure-9m8817p.pages.github.io/aiisp.html) | AI ISP Camera SDK details |
-| [aiisp-guide.html](https://reimagined-adventure-9m8817p.pages.github.io/aiisp-guide.html) | AI ISP installation and example guide |
-| [robot.html](https://reimagined-adventure-9m8817p.pages.github.io/robot.html) | Robot Multi-Sensor details |
-| [robot-guide.html](https://reimagined-adventure-9m8817p.pages.github.io/robot-guide.html) | MPM hardware, installation, and operation guide |
-| [dms.html](https://reimagined-adventure-9m8817p.pages.github.io/dms.html) | RID Camera SDK details |
-| [dms-guide.html](https://reimagined-adventure-9m8817p.pages.github.io/dms-guide.html) | RID Camera Windows development guide |
-| [underdisplay.html](https://reimagined-adventure-9m8817p.pages.github.io/underdisplay.html) | UDIR system details and restoration evaluation | |
-| [underdisplay-guide.html](https://reimagined-adventure-9m8817p.pages.github.io/underdisplay-guide.html) | UDIR hardware setup and demonstration guide |
-| [rpi-camera.html](https://reimagined-adventure-9m8817p.pages.github.io/rpi-camera.html) | RPi Pan/Tilt Camera SDK details
-| [rpi-camera-guide.html](https://reimagined-adventure-9m8817p.pages.github.io/rpi-camera-guide.html) | RPi Pan/Tilt Camera full installation guide |
-
-## Repository Structure
-
-```text
-.
-├── index.html
-├── aiisp.html
-├── aiisp-guide.html
-├── robot.html
-├── robot-guide.html
-├── dms.html
-├── dms-guide.html
-├── underdisplay.html
-├── underdisplay-guide.html
-├── styles.css
-├── navigation.js
-├── assets/
-└── images/
-    ├── aiisp/
-    │   ├── setup/
-    │   └── examples/
-    ├── robot/
-    │   ├── hardware/
-    │   └── examples/
-    └── udir/
-        ├── setup/
-        └── evaluation/
-```
-
 ## Viewing the Website
 
 This is a static website, so it can be viewed by opening [index.html](index.html) in a browser. Refer to each product's details and guide pages for complete capabilities and requirements.

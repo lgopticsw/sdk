@@ -1,6 +1,6 @@
 const SITE_LINKS = {
-  home: 'index.html',
-  products: 'index.html#products',
+  home: 'https://lgopticsw.github.io/sdk/',
+  products: 'https://lgopticsw.github.io/sdk/#products',
 
   robotDetails: 'https://vigilant-meme-684wo6q.pages.github.io/robot.html',
   robotGuide: 'https://vigilant-meme-684wo6q.pages.github.io/robot-guide.html',
